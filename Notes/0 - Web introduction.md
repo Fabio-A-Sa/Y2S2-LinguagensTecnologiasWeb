@@ -14,7 +14,7 @@ Sistema de documentos de hipertexto (links) acessados via internet / browser. Ta
 
 ### Funcionamento da Web
 
-
+<img src = "https://web.fe.up.pt/~arestivo/slides/assets/web/web2.svg">
 
 ### Bibliography:
 [The Web](https://web.fe.up.pt/~arestivo/slides/?s=web#1), André Restivo
