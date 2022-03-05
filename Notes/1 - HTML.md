@@ -159,10 +159,14 @@ Elementos de secção e significados. Headers e Footers:
 </main>
 ```
 
-As listas de elementos pode ser ordenadas ou desordenadas
+As listas de elementos, `<li>`, podem ser ordenadas `<ol>` ou desordenadas `<dl>`:
 
 ```html
-
+<ol>
+  <li>An item</li>
+  <li>Another item</li>
+  <li>And another one</li>
+</ol>
 ```
 
 <br>
