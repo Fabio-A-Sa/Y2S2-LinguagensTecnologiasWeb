@@ -125,7 +125,7 @@ As imagens podem ter vários atributos e legendas:
 Headings, para dar destaque e volume ao texto apresentado:
 
 ```html
-<h1>Title</h1>                          <!-- only one per document -->
+<h1>Title</h1>                                  <!-- only one per document -->
 <h2>Subtitle</h2>
 <h3>Section</h3>
 <h4>Sub-section</h4>
@@ -141,18 +141,28 @@ Elementos de secção e significados. Headers e Footers:
 <nav>Uma secção com links</nav>
 <aside>Para um conteúdo separado do geral. Uma espécie de à parte</aside>
 
-<section id="posts">
-  <h1>Posts</h1>
-  <article>                                      <!-- Artigo                           -->
-    <header>                                     <!-- Cabeçalho do artigo              -->
-      <h2>Title of the Post</h2>                 <!-- Pode conter títulos e subtítulos -->
-      <h3>And the subtitle</h3>
-    </header>
-    <p>The post content</p>                      <!-- Conteúdo principal / texto       -->
-    <p>More content</p>                                
-    <footer><p>Author of the post</p></footer>   <!-- No final, o rodapé               -->
-  </article>
-</section>
+<main>                                             <!-- Zona principal -->                 
+    <section id="posts">
+    <h1>Posts</h1>
+    <article>                                      <!-- Artigo                           -->
+        <header>                                   <!-- Cabeçalho do artigo              -->
+        <h2>Title of the Post</h2>                 <!-- Pode conter títulos e subtítulos -->
+        <h3>And the subtitle</h3>
+        </header>
+        <div id = "introduction" >                 <!-- As divs são semânticas           -->
+        <p>The post content introduction</p>       <!-- Conteúdo principal / texto       -->
+        </div>
+        <p>More content</p>                                
+        <footer><p>Author of the post</p></footer> <!-- No final, o rodapé               -->
+    </article>
+    </section>
+</main>
+```
+
+As listas de elementos pode ser ordenadas ou desordenadas
+
+```html
+
 ```
 
 <br>
