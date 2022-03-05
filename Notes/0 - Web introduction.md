@@ -14,7 +14,15 @@ Sistema de documentos de hipertexto (links) acessados via internet / browser. Ta
 
 ### Funcionamento da Web
 
-<img align = "center" src = "https://web.fe.up.pt/~arestivo/slides/assets/web/web2.svg">
+Cada dispositivo tem um `IP` (Internet Protocol) externo e interno, que é usado para calcular para onde eles devem mandar a informação. <br>
+Um `ISP` é
+Um `DNS` é
+
+<p align = "center">
+    <img src = "https://web.fe.up.pt/~arestivo/slides/assets/web/web6.svg">
+</p>
+<p align = "center" >Esquema ilustrativo. Credits: André Restivo</p>
+<br>
 
 ### Bibliography:
 [The Web](https://web.fe.up.pt/~arestivo/slides/?s=web#1), André Restivo
