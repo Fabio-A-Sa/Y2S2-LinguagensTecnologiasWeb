@@ -243,6 +243,21 @@ Para tabelas de estrutura mais complexa, com um header, um body e um footer, aco
 </table>
 ```
 
+Para não estar a repetir atributos em todas as tags de determinadas linhas ou colunas, pode-se usar `<colgroup>` e `<rowgroup>`:
+
+```html
+<table>
+  <colgroup>
+    <col span="2" class="firsttwo">
+    <col class="middle">
+    <col span="2" class="lasttwo">
+  </colgroup>
+  <tr>
+    <td>A</td><td>B</td><td>C</td><td>E</td><td>F</td>
+  </tr>
+</table>
+```
+
 
 <br>
 
