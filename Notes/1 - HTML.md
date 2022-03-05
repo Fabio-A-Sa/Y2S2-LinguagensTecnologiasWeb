@@ -159,15 +159,23 @@ Elementos de secção e significados. Headers e Footers:
 </main>
 ```
 
-As listas de elementos, `<li>`, podem ser ordenadas `<ol>` ou desordenadas `<dl>`:
+As listas de elementos, `<li>`, podem ser ordenadas `<ol>` ou não ordenadas `<ul>`. Podem ter inúmeros atributos:
 
 ```html
-<ol>
-  <li>An item</li>
-  <li>Another item</li>
-  <li>And another one</li>
-</ol>
+<ul>                                              <!-- Nested lists -->
+    <ol type = "I" start = "4" reversed >
+    <li>An item</li>                              <!-- IV   -->
+    <li value = "8" >Another item</li>            <!-- VIII -->
+    <li>And another one</li>                      <!-- VII  -->
+    </ol>
+    <ul type = "I" start = "4" reversed >
+    <li>An item</li>                              <!-- IV   -->
+    <li value = "8" >Another item</li>            <!-- VIII -->
+    </ul>
+</ul>
 ```
+
+
 
 <br>
 
