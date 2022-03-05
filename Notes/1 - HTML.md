@@ -95,9 +95,7 @@ O texto pode ser tratado de acordo com a sua semântica
 A tag `span` pode ser usada com classes e ids para representar e manipular tudo:
 
 ```html
-<p>
-    <span class = "something" >this is an important text</span>
-</p>
+<span class = "something" >this is an important text</span>
 ```
 
 Os links podem ser colocados com a tag `<a>`:
@@ -109,6 +107,31 @@ Os links podem ser colocados com a tag `<a>`:
 </p>
 ```
 
+As imagens podem ter vários atributos e legendas:
+
+```html
+<figure>
+    <img
+        src = "../folder/anotherFolder/aSimpleImage.png"
+        alt = "A simple example image description"
+        title = "Example"
+        width = "200" height = "350"
+    >
+    <figcaption>Fig 1: Uma imagem que serve de exemplo</figcaption>
+</figure>
+
+```
+
+Headings, para dar destaque e volume ao texto apresentado:
+
+```html
+<h1>Title</h1>                          <!-- only one per document -->
+<h2>Subtitle</h2>
+<h3>Section</h3>
+<h4>Sub-section</h4>
+<h5>Each one less important...</h5>
+<h6>...than the other</h6>
+```
 
 
 
