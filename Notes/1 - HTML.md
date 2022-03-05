@@ -136,7 +136,7 @@ Headings, para dar destaque e volume ao texto apresentado:
 Elementos de secção e significados. Headers e Footers:
 
 ```html
-<article>Usado para um elemento completo e estruturado, por exemplo um blog post ou comentário</article>
+<article>Usado para um elemento completo e estruturado, um blog post ou comentário</article>
 <section>Usado com heading por um grupo temático</section>
 <nav>Uma secção com links</nav>
 <aside>Para um conteúdo separado do geral. Uma espécie de à parte</aside>
