@@ -8,8 +8,8 @@ Computadores interligados numa rede a nível global usando um conjunto de protoc
 #### 2. Web
 Sistema de documentos de hipertexto (links) acessados via internet / browser. Também conhecida como WWW (World Wide Web). Criado por Tim Berners-Lee em 1989 com os seguintes componentes:
 
-1. URL - notação para localizações de ficheiros em servidores
-2. HTTP - protocolo para transferências de ficheiros
+1. URL (Uniform Resource Locator) - notação de referência para localizações de ficheiros em servidores
+2. HTTP (Hypertext Transfer Protocol) - protocolo para transferências de ficheiros
 3. HTML - uma linguagem para estruturação do hipertexto
 
 ### Funcionamento da Web
