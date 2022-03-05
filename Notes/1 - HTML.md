@@ -40,10 +40,10 @@ Estrutura básica:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>                                      <!-- Head: O nome que se vai ver no topo da página / aba do browser -->
+    <head>                                <!-- Head: O nome do topo da página do browser -->
         <title>A simple web page</title>
     </head>
-    <body>                                      <!-- Body: Todo o outro conteúdo da página -->
+    <body>                                <!-- Body: Todo o outro conteúdo da página -->
         <p>Content</p>
     </body>
 </html>
