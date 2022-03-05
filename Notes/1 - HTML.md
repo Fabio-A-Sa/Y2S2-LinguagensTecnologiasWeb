@@ -133,7 +133,7 @@ Headings, para dar destaque e volume ao texto apresentado:
 <h6>...than the other</h6>
 ```
 
-Elementos de secção e significados. Headers e Footers
+Elementos de secção e significados. Headers e Footers:
 
 ```html
 <article>Usado para um elemento completo e estruturado, por exemplo um blog post ou comentário</article>
@@ -143,14 +143,14 @@ Elementos de secção e significados. Headers e Footers
 
 <section id="posts">
   <h1>Posts</h1>
-  <article>                                             <!-- Artigo                             -->
-    <header>                                            <!-- Cabeçalho do artigo                -->
-      <h2>Title of the Post</h2>                        <!-- Pode conter títulos e subtítulos   -->
+  <article>                                      <!-- Artigo                           -->
+    <header>                                     <!-- Cabeçalho do artigo              -->
+      <h2>Title of the Post</h2>                 <!-- Pode conter títulos e subtítulos -->
       <h3>And the subtitle</h3>
     </header>
-    <p>The post content</p>                             <!-- Conteúdo principal / texto         -->
+    <p>The post content</p>                      <!-- Conteúdo principal / texto       -->
     <p>More content</p>                                
-    <footer><p>Author of the post</p></footer>          <!-- No final, o rodapé                 -->
+    <footer><p>Author of the post</p></footer>   <!-- No final, o rodapé               -->
   </article>
 </section>
 ```
