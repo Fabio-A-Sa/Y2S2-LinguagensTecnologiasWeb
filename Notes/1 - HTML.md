@@ -18,13 +18,17 @@ Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencial
 As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspas não são obrigatórias em HTML5, mas são recomendadas. Exemplo:
 
 ```html
-<html>
-    <p>My first line of HTML!</p>
-    <br>
-</html>
+<img title = "Dog" src = "dog.png" alt = "a little dog" >
+<input type = "checkbox" checked disabled = "disabled" >
 ```
 
+### 3. ID e Class
 
+Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (o "nome" do elemento). Exemplo:
+
+```html
+<img src = "FEUP.png" >
+```
 
 <br>
 
