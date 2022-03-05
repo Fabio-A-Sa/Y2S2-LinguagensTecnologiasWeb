@@ -57,15 +57,26 @@ Espaços em branco ou mudanças de linha podem ou não ser considerados
 ```html
 <pre>
     <textarea>
-    "The Old Pond" by Matsuo Bashō
-
+        "The Old Pond" by Matsuo Bashō
+    </textarea>
     An old silent pond
         A frog jumps into the pond—
-    Splash! Silence again.
-    </textarea>
+Splash! Silence again.
 </pre>
 ```
 
+O texto pode ser tratado de acordo com a sua semântica
+
+```html
+<em>emphasized</em>      <!-- emphasized         -->
+<small>small</small>     <!-- smaller            -->
+<strong>strong</strong>  <!-- important          -->
+<sub>subscripted</sub>   <!-- subscripted        -->
+<sup>superscripted</sup> <!-- superscripted      -->
+<ins>inserted</ins>      <!-- inserted           -->
+<del>deleted</del>       <!-- deleted            -->
+<mark>highlighted</mark> <!-- marked/highlighted -->
+```
 
 
 
