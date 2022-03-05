@@ -4,7 +4,7 @@ HTML, Hyper Text Markup Language, é a linguagem estrutural e semântica de pág
 
 ### 1. Tags
 
-Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencialmente escritas em letra minúscula. Exemplo:
+Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencialmente escritas em letra minúscula:
 
 ```html
 <html>
@@ -15,7 +15,7 @@ Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencial
 
 ### 2. Atributos
 
-As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspas não são obrigatórias em HTML5, mas são recomendadas. Exemplo:
+As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspas não são obrigatórias em HTML5, mas são recomendadas:
 
 ```html
 <img title = "Dog" src = "dog.png" alt = "a little dog" >
@@ -24,7 +24,7 @@ As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspa
 
 ### 3. ID e Class
 
-Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (o "nome" do elemento). Exemplo:
+Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (o "nome" do elemento):
 
 ```html
 <p class "UP">
@@ -32,6 +32,24 @@ Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (
     <img id = "FCUP" src = "FCUP.png">
 </p>
 ```
+
+## Documentos HTML
+
+Estrutura básica:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>                                      <!-- Head: O nome que se vai ver no topo da página / aba do browser -->
+        <title>A simple web page</title>
+    </head>
+    <body>                                      <!-- Body: Todo o outro conteúdo da página -->
+        <p>Content</p>
+    </body>
+</html>
+```
+
+
 
 <br>
 
