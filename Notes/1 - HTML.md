@@ -52,15 +52,21 @@ Estrutura básica:
 </html>
 ```
 
-Nota:
-    Espaços em branco
-    nunca tal tal
+Espaços em branco ou mudanças de linha podem ou não ser considerados
 
-    exemplo:
-    
-    ```html
-    <pre>
-    ```
+```html
+<pre>
+    <textarea>
+    "The Old Pond" by Matsuo Bashō
+
+    An old silent pond
+        A frog jumps into the pond—
+    Splash! Silence again.
+    </textarea>
+</pre>
+```
+
+
 
 
 <br>
