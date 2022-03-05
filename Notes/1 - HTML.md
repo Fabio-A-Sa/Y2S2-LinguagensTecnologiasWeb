@@ -187,7 +187,7 @@ As listas `<dl>` podem ser usadas como dicionários, com termos `<dt>` e defini�
 </dl>
 ````
 
-Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`. Pode ter um título `<caption>`:
+Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`. Os cabeçalhos podem ser do tipo `<th>` para headers e indicar o seu scope (se é de coluna ou linha). Pode ter um título `<caption>`:
 
 ```html
 <table>
