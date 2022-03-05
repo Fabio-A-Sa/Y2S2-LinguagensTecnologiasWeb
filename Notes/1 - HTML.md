@@ -222,6 +222,27 @@ Para tabelas de estrutura mais complexa e que exigem merge de células na horizo
 </table>
 ```
 
+Para tabelas de estrutura mais complexa, com um header, um body e um footer, aconselha-se a usar as seguintes tags. Assim com javascript é possível fazer scroll do conteúdo do body sem afectar o nome principal das colunas:
+
+```html
+<table>
+  <thead>
+    <tr><th>A</th><th>B</th><th>C</th></tr>
+  </thead>
+  <tfoot>
+    <tr><td>100</td><td>200</td><td>300</td></tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>a</td><td>b</td><td>c</td>
+    </tr>
+    <tr>
+      <td>d</td><td>e</td><td>f</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 
 <br>
 
