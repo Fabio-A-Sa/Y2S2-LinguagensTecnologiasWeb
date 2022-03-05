@@ -203,6 +203,11 @@ Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`
 </table>
 ```
 
+Para tabelas de estrutura mais complexa e que exigem merge de células na horizontal e/ou vertical
+
+```html
+
+```
 
 
 <br>
