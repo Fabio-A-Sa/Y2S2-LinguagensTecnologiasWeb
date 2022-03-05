@@ -27,7 +27,10 @@ As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspa
 Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (o "nome" do elemento). Exemplo:
 
 ```html
-<img src = "FEUP.png" >
+<p class "UP">
+    <img id = "FEUP" src = "FEUP.png">
+    <img id = "FCUP" src = "FCUP.png">
+</p>
 ```
 
 <br>
