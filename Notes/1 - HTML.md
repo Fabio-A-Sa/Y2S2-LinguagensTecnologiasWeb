@@ -1,6 +1,7 @@
 # 1 - HTML
 
-HTML, Hyper Text Markup Language, é a linguagem estrutural e semântica de páginas web, escrita através de elementos sem preocupação com a apresentação. 
+HTML, Hyper Text Markup Language, é a linguagem estrutural e semântica de páginas web, escrita através de elementos sem preocupação com a apresentação. <br>
+Além da sintaxe, é também importante a semântica que descreve o que cada palavra significa, para a utilização por parte de bots, de desenvolvedores e de browsers especiais.
 
 ## Elementos HTML
 
