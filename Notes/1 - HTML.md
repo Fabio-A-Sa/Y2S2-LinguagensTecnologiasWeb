@@ -203,10 +203,23 @@ Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`
 </table>
 ```
 
-Para tabelas de estrutura mais complexa e que exigem merge de células na horizontal e/ou vertical
+Para tabelas de estrutura mais complexa e que exigem merge de células na horizontal e/ou vertical. [Slide 43](https://web.fe.up.pt/~arestivo/slides/?s=html5#43) para consulta futura:
 
 ```html
-
+<table>
+  <tr>
+    <td>A</td><td colspan="2">B</td>
+  </tr>
+  <tr>
+    <td rowspan="2">C</td><td>D</td><td>E</td>
+  </tr>
+  <tr>
+    <td colspan="2">F</td>
+  </tr>
+  <tr>
+    <td colspan="3">G</td>
+  </tr>
+</table>
 ```
 
 

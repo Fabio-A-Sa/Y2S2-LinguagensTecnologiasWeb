@@ -5,15 +5,18 @@
     </head>
     <body>                                <!-- Body: Todo o outro conteúdo da página -->
         <table>
-            <caption>Tabela 1: Exemplo sem CSS</caption><br>
             <tr>
-                <th scope = "col">A</th>
-                <th scope = "col">B</th>
-                <th scope = "col">C</th>
+              <td>A</td><td colspan="2">B</td>
             </tr>
             <tr>
-                <td>D</td><td>E</td><td>F</td>
+              <td rowspan="2">C</td><td>D</td><td>E</td>
             </tr>
-        </table>
+            <tr>
+              <td colspan="2">F</td>
+            </tr>
+            <tr>
+              <td colspan="3">G</td>
+            </tr>
+          </table>
     </body>
 </html>
