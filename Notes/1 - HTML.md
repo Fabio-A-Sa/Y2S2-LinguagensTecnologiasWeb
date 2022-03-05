@@ -187,7 +187,19 @@ As listas `<dl>` podem ser usadas como dicionários, com termos `<dt>` e defini�
 </dl>
 ````
 
-Tabelas
+Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`. Pode ter um título `<caption>`:
+
+```html
+<table>
+    <caption>Tabela 1: Exemplo sem CSS</caption><br>
+    <tr>
+        <td>A</td><td>B</td><td>C</td>
+    </tr>
+    <tr>
+        <td>D</td><td>E</td><td>F</td>
+    </tr>
+</table>
+```
 
 
 
