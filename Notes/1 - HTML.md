@@ -68,19 +68,19 @@ Splash! Silence again.
 O texto pode ser tratado de acordo com a sua semântica
 
 ```html
-<em>emphasized</em>         <!-- emphasized         -->
-<small>small</small>        <!-- smaller            -->
-<strong>strong</strong>     <!-- important          -->
-<sub>subscripted</sub>      <!-- subscripted        -->
-<sup>superscripted</sup>    <!-- superscripted      -->
-<ins>inserted</ins>         <!-- inserted           -->
-<del>deleted</del>          <!-- deleted            -->
-<mark>highlighted</mark>    <!-- marked/highlighted -->
-<pre>...</pre>              <!-- preformatted text    -->
-<code>...</code>            <!-- computer code        -->
-<kbd>...</kbd>              <!-- keyboard input       -->
-<samp>...</samp>            <!-- sample computer code -->
-<var>...</var>              <!-- a variable           -->
+<em>emphasized</em>         <!-- emphasized                      -->
+<small>small</small>        <!-- smaller                         -->
+<strong>strong</strong>     <!-- important                       --> 
+<sub>subscripted</sub>      <!-- subscripted                     -->
+<sup>superscripted</sup>    <!-- superscripted                   -->
+<ins>inserted</ins>         <!-- inserted                        -->
+<del>deleted</del>          <!-- deleted                         -->
+<mark>highlighted</mark>    <!-- marked/highlighted              -->
+<pre>...</pre>              <!-- preformatted text               -->
+<code>...</code>            <!-- computer code                   -->
+<kbd>...</kbd>              <!-- keyboard input                  -->
+<samp>...</samp>            <!-- sample computer code            -->
+<var>...</var>              <!-- a variable                      -->
 <abbr></abbr>               <!-- an abbreviation or acronym      -->
 <address></address>         <!-- contact information for someone -->
 <time></time>               <!-- a time of the day               -->
@@ -92,11 +92,24 @@ O texto pode ser tratado de acordo com a sua semântica
 <dfn></dfn>                 <!-- a definition                    -->
 ```
 
-A importância do `span`:
+A tag `span` pode ser usada com classes e ids para representar e manipular tudo:
 
 ```html
-
+<p>
+    <span class = "something" >this is an important text</span>
+</p>
 ```
+
+Os links podem ser colocados com a tag `<a>`:
+
+```html
+<p>
+    Era uma vez... <br>
+    Autor: <a href = "www.wikipedia.pt" >Desconhecido</a> <br>
+</p>
+```
+
+
 
 
 <br>
