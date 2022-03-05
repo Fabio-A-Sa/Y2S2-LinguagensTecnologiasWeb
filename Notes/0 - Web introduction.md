@@ -14,9 +14,9 @@ Sistema de documentos de hipertexto (links) acessados via internet / browser. Ta
 
 ### Funcionamento da Web
 
-Cada dispositivo tem um `IP` (Internet Protocol) externo e interno, que é usado para calcular para onde eles devem mandar a informação. <br>
-Um `ISP` é
-Um `DNS` é
+Cada dispositivo tem um `IP` (Internet Protocol) externo e interno que é usado para calcular para onde devem mandar a informação. <br>
+Um `ISP` (Internet Service Providers) é a organização que conecta o utilizador à internet (ex.: Meo, Vodafone, NOS...)
+Um `DNS` (Domain Name Service) é o sistema que transforma os IPs em URLs. Por exemplo, google.com é na realidade 173.194.34.224
 
 <p align = "center">
     <img src = "https://web.fe.up.pt/~arestivo/slides/assets/web/web6.svg">
