@@ -175,6 +175,20 @@ As listas de elementos, `<li>`, podem ser ordenadas `<ol>` ou não ordenadas `<u
 </ul>
 ```
 
+As listas `<dl>` podem ser usadas como dicionários, com termos `<dt>` e definições `<dd>`
+
+```html
+<dl>
+  <dt>A term</dt>
+  <dd>And its definition</dd>
+  <dt>This one</dt>
+  <dd>Has a different definition</dd>
+  <dd>And an alternative definition</dd>
+</dl>
+````
+
+Tabelas
+
 
 
 <br>
