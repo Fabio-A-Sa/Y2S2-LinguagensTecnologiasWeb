@@ -52,6 +52,15 @@ Estrutura básica:
 </html>
 ```
 
+Nota:
+    Espaços em branco
+    nunca tal tal
+
+    exemplo:
+    
+    ```html
+    <pre>
+    ```
 
 
 <br>
