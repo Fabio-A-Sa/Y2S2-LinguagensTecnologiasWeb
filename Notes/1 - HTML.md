@@ -312,7 +312,7 @@ Checkbox
 <input type="radio" name="gender" value="female">Female
 ```
 
-Upload de ficheiros
+Upload de ficheiros e envoi
 
 ```html
 <p>Upload:</p> 
@@ -322,7 +322,9 @@ Upload de ficheiros
              accept="image/png,image/jpeg"            <!-- Ficheiros que aceita    -->
              multiple >                               <!-- Aceita vários ficheiros -->
 </form>
-
+<form action="save.php" method="get">
+  <input type="submit" value="Send">                  <!-- Para mandar o ficheiro  -->
+</form>
 ```
 
 
