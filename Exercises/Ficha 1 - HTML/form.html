@@ -23,8 +23,8 @@
                 </label><br>
                 <label>
                     <strong>Profissao: </strong>
-                    <input name="profissao">
-                    <datalist id = "profissao">
+                    <input name="profissao" list="profissoes">
+                    <datalist id = "profissoes">
                         <option selected>Engenheiro</option>
                         <option>Astronauta</option>
                         <option>Professor</option>
@@ -33,16 +33,37 @@
                 </label><br>
                 <label>
                     <strong>Pais: </strong>
-                    <input name="pais" required>
-                    <datalist id = "pais">
+                    <input name="pais" list="paises" required>
+                    <datalist id = "paises">
                         <option selected>Portugal</option>
                         <option>Espanha</option>
                         <option>Inglaterra</option>
                         <option>Brasil</option>
                     </datalist>
+                </label><br>
+                <label>
+                    <strong>Linguagens de interesse:</strong><br>
+                    <input type="checkbox" name="lang" value="cpp">C++<br>
+                    <input type="checkbox" name="lang" value="python">Python<br>
+                    <input type="checkbox" name="lang" value="java">Java<br>
+                    <input type="checkbox" name="lang" value="html">HTML<br>
+                    <input type="checkbox" name="lang" value="js">Javascript<br>
+                    <input type="checkbox" name="lang" value="c">C<br>
+                    <input type="checkbox" name="lang" value="assembly">Assembly
+                </label><br>
+                <label>
+                    <strong>O que achou do site?</strong>
+                    <input type="text">
+                </label>
                 </label><br><br>
                 <input type="submit" value="Enviar">
             </fieldset>
         </form>
     </body>
 </html>
+
+<!--
+Com method="get"
+../form.html?nome=F%E1bio+S%E1&age=19-35&profissao=Engenheiro&pais=Portugal&lang=cpp&lang=python&lang=html
+Com method=
+-->
