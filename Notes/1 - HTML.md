@@ -276,6 +276,7 @@ Email: <input type="email" name="email" value="yourEmail@email.com">
 Search: <input type="search" name="number" value="something">
 URL: <input type="url" name="url" value="www.something.pt">
 Color: <input name="color" type="color" value="#336699">
+Hiden: <input type = "hiden" name = "username" value = "me">
 
 Address: <input type="text"                              <!-- Tipo do input               -->
                 name="address"                           <!-- Nome do input               -->
@@ -314,6 +315,13 @@ Checkbox
 Upload de ficheiros
 
 ```html
+<p>Upload:</p> 
+<form action="upload_file.php" 
+      method="post" enctype="multipart/form-data">    <!-- Obrigatório             -->
+      <input type="file" name="file" 
+             accept="image/png,image/jpeg"            <!-- Ficheiros que aceita    -->
+             multiple >                               <!-- Aceita vários ficheiros -->
+</form>
 
 ```
 
