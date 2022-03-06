@@ -3,9 +3,28 @@
 HTML, Hyper Text Markup Language, é a linguagem estrutural e semântica de páginas web, escrita através de elementos sem preocupação com a apresentação. <br>
 Além da sintaxe, é também importante a semântica que descreve o que cada palavra significa, para a utilização por parte de bots, de desenvolvedores e de browsers especiais.
 
-## Elementos HTML
+## Tópicos
 
-### 1. Tags
+1. Elementos HTML
+    - Tags
+    - Atributos
+    - IDs e Classes
+2. Documentos HTML
+    - Estrutura básica
+    - Caracteres em branco
+    - Semântica
+    - Imagens
+    - Headings
+    - Headers e footers
+    -
+
+
+3. Formulários
+4.
+
+## 1 - Elementos HTML
+
+### 1.1 - Tags
 
 Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencialmente escritas em letra minúscula:
 
@@ -16,7 +35,7 @@ Escritas entre `<` e `>`, com quase todas a fecharem numa `/`. São preferencial
 </html>
 ```
 
-### 2. Atributos
+### 1.2 - Atributos
 
 As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspas não são obrigatórias em HTML5, mas são recomendadas:
 
@@ -25,7 +44,7 @@ As tags podem conter atributos, alguns opcionais e outros obrigatórios. As aspa
 <input type = "checkbox" checked disabled = "disabled" >
 ```
 
-### 3. ID e Class
+### 1.3 - ID e Class
 
 Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (o "nome" do elemento):
 
@@ -36,9 +55,9 @@ Todo o elemento pode ter várias classes (o "tipo" do elemento) e apenas um id (
 </p>
 ```
 
-## Documentos HTML
+## 2 - Documentos HTML
 
-Estrutura básica:
+### 2.1 - Estrutura básica:
 
 ```html
 <!DOCTYPE html>
@@ -52,6 +71,7 @@ Estrutura básica:
 </html>
 ```
 
+### 2.2 - Caracteres em branco
 Espaços em branco ou mudanças de linha podem ou não ser considerados
 
 ```html
@@ -64,6 +84,7 @@ Espaços em branco ou mudanças de linha podem ou não ser considerados
 
 ```
 
+### 2.3 - Semântica
 O texto pode ser tratado de acordo com a sua semântica
 
 ```html
@@ -106,6 +127,7 @@ Os links podem ser colocados com a tag `<a>`:
 </p>
 ```
 
+### 2.4 - Imagens
 As imagens podem ter vários atributos e legendas:
 
 ```html
@@ -121,7 +143,8 @@ As imagens podem ter vários atributos e legendas:
 
 ```
 
-Headings, para dar destaque e volume ao texto apresentado:
+### 2.5 - Headings, headers e footers
+Para dar destaque e volume ao texto apresentado:
 
 ```html
 <h1>Title</h1>                                  <!-- only one per document -->
@@ -428,7 +451,7 @@ Metadata
 </head>
 ```
 
-Validação
+Validação <br>
 Há sites que permitem validar e ver os erros contidos no código HTML. Por exemplo [este]().
 
 <br>
