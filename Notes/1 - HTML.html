@@ -4,14 +4,13 @@
         <title>A simple web page</title>
     </head>
     <body>                                <!-- Body: Todo o outro conteúdo da página -->
-      <p>Upload:</p> 
-      <form action="upload_file.php" 
-            method="post" enctype="multipart/form-data">    <!-- Obrigatório             -->
-            <input type="file" name="file" 
-                   accept="image/png,image/jpeg"        
-                   multiple >                               <!-- Aceita vários ficheiros -->
-                   <input type="submit" value="Send">                  <!-- Para mandar o ficheiro  -->
+      <form>
+        <fieldset>
+          <legend>Personal data:</legend>
+          <label>Name: <input type="text"></label>
+          <label>Email: <input type="text"></label>
+          <label>Date of birth: <input type="text"></label>
+        </fieldset>
       </form>
-
     </body>
 </html>

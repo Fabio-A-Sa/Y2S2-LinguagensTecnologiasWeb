@@ -298,6 +298,19 @@ Month: <input name="month" type="month" value="2020-10">
 Week: <input name="week" type="week" value="2020-W09">
 ```
 
+Botões
+
+```html
+<form>
+  <button formaction="login.php" formmethod="post" type="submit">
+    Login
+  </button>
+  <button formaction="register.php" formmethod="post" type="submit">
+    Register
+  </button>
+</form>
+```
+
 Checkbox
 
 ```html
