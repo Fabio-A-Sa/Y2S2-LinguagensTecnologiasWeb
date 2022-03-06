@@ -271,13 +271,29 @@ Tipos de input:
 ```html
 Date: <input type="date" name="date" value="2020-10-15">
 Password: <input type="password" name="password" value="mysecretpassword">
-Number: <input type="number" name="number" value="123">
+Telephone: <input type="tel" name="number" value="987654321">
+Email: <input type="email" name="email" value="yourEmail@email.com">
+Search: <input type="search" name="number" value="something">
+URL: <input type="url" name="url" value="www.something.pt">
 
-Address: <input type="text"                         <!-- Type -->
-                name="address" 
-                placeholder="your main address" 
-                required="required" 
-                disabled >
+Address: <input type="text"                         <!-- Tipo do input               -->
+                name="address"                      <!-- Nome do input               -->
+                placeholder="your main address"     <!-- Texto que aparece na caixa  -->
+                required="required"                 <!-- Se é de escrita obrigatória -->
+                disabled >                          <!-- Se é permitido escrita      -->
+
+Number: <input type="number" name="number"          <!-- Podem ter vários atributos  -->
+               value="42" max = 50 min = 10 step = 2 >
+```
+
+Datas em HTML
+
+```html
+Date: <input name="date" type="date" value="2020-10-20" min="2020-10-01">
+Time: <input name="time" type="time" value="10:00:30">
+Date and Time: <input name="datetime" type="datetime-local" value="2020-10-20T10:00">
+Month: <input name="month" type="month" value="2020-10">
+Week: <input name="week" type="week" value="2020-W09">
 ```
 
 
