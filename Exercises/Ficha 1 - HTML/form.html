@@ -8,16 +8,41 @@
         >
     </head>
     <body>
-        <fieldset>
-            <legend>
-                <h2>Formulario</h2>
-            </legend>
-            <label>Nome: <input type="text"></label> <br>
-            <label>Email: <input type="email" ></label> <br>
-            <label>Data: <input type="date" value = "05-03-2022"></label>
-            <label>Hora: <input type="time" value = "now"></label> <br>
-            <label>Comentario: <input type="textbox" rows = 10 cols = 50></label>
-            <input type="submit" value="Send" >
-        </fieldset>
+        <form action="form.html" method="get">
+            <fieldset>
+                <legend>
+                    <h2>Formulario</h2>
+                </legend>
+                <label><strong>Nome: </strong><input name="nome" type="text" required></label><br>
+                <label>
+                    <strong>Idade: </strong><br>
+                    <input type="radio" name="age" value="18">&lt;18<br>
+                    <input type="radio" name="age" value="19-35">19-35<br>
+                    <input type="radio" name="age" value="36-48">36-48<br>
+                    <input type="radio" name="age" value="49">&gt;49
+                </label><br>
+                <label>
+                    <strong>Profissao: </strong>
+                    <input name="profissao">
+                    <datalist id = "profissao">
+                        <option selected>Engenheiro</option>
+                        <option>Astronauta</option>
+                        <option>Professor</option>
+                        <option>Ministro</option>
+                    </datalist>
+                </label><br>
+                <label>
+                    <strong>Pais: </strong>
+                    <input name="pais" required>
+                    <datalist id = "pais">
+                        <option selected>Portugal</option>
+                        <option>Espanha</option>
+                        <option>Inglaterra</option>
+                        <option>Brasil</option>
+                    </datalist>
+                </label><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
     </body>
 </html>
