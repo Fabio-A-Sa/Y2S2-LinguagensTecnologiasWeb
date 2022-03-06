@@ -46,7 +46,7 @@ Estrutura básica:
     <head>                                <!-- Head: O nome do topo da página do browser -->
         <title>A simple web page</title>
     </head>
-    <body>                                <!-- Body: Todo o outro conteúdo da página -->
+    <body>                                <!-- Body: Todo o outro conteúdo da página     -->
         <p>Content</p>
     </body>
 </html>
@@ -55,14 +55,13 @@ Estrutura básica:
 Espaços em branco ou mudanças de linha podem ou não ser considerados
 
 ```html
-<pre>
-    <textarea>
-        "The Old Pond" by Matsuo Bashō
-    </textarea>
-    An old silent pond
-        A frog jumps into the pond—
-Splash! Silence again.
-</pre>
+<textarea name="description" rows="5" cols="60">      <!-- Tamanho da caixa de texto -->
+  This is an input field that allows
+  the user to input several lines of text.
+  This is the initial value for that input.
+  Be careful about extra white space.
+</textarea>
+
 ```
 
 O texto pode ser tratado de acordo com a sua semântica
@@ -340,7 +339,40 @@ Upload de ficheiros e envoi
 </form>
 ```
 
+Itens selecionáveis, grupos e listas
 
+```html
+<!-- Uma lista simples de elemntos -->
+<select name="fruit">
+  <option value="orange">Orange</option>
+  <option value="banana" selected>Banana</option>
+  <option value="tomato">Tomato</option>
+  <option value="apple">Apple</option>
+</select>
+
+<!-- Grupos de opções -->
+<select name="food">
+  <optgroup label="Fruits">
+    <option value="orange">Orange</option>
+    <option value="banana" selected>Banana</option>
+  </optgroup>
+  <optgroup label="Vegetables">
+    <option value="lettuce">Lettuce</option>
+    <option value="carrot">Carrot</option>
+  </optgroup>
+</select>
+
+<!-- Lista de sugestões -->
+<input name="fruit" list="fruits" value="Banana">
+<datalist id="fruits">
+  <option>Orange</option>
+  <option selected>Banana</option>
+  <option>Tomato</option>
+  <option>Apple</option>
+</datalist>
+```
+
+<p>some tests</p>
 
 <br>
 
