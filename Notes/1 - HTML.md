@@ -297,6 +297,25 @@ Month: <input name="month" type="month" value="2020-10">
 Week: <input name="week" type="week" value="2020-W09">
 ```
 
+Checkbox
+
+```html
+ <!-- :vehicle=Bike&vehicle=Car -->
+<p>How do you go to scholl?</p>
+<input type="checkbox" name="vehicle" value="Bike">Ride a bike
+<input type="checkbox" name="vehicle" value="Car" checked>Drive a car
+
+<!-- Só uma de várias opções, :gender=male -->
+<p>Your gender</p>
+<input type="radio" name="gender" value="male" checked="checked">Male
+<input type="radio" name="gender" value="female">Female
+```
+
+Upload de ficheiros
+
+```html
+
+```
 
 
 <br>
