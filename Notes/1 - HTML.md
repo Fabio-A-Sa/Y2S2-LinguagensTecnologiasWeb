@@ -397,6 +397,28 @@ Double quote sign ("): &quot;
 Non-breaking space ( ): &nbsp;
 ```
 
+Media
+
+```html
+<!-- Canvas -->
+<canvas width="400px" height="300px"></canvas>
+
+<!-- SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+  <polygon
+        points="100,10 40,180 190,60 10,60 160,180"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"
+  >
+</svg>
+
+<!-- Outras tags disponíveis -->
+<audio></audio>
+<video></video>
+<source></source>
+<track></track>
+```
+
+
 
 <br>
 
