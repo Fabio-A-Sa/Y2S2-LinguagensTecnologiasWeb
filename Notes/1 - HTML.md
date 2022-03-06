@@ -277,6 +277,11 @@ URL: <input type="url" name="url" value="www.something.pt">
 Color: <input name="color" type="color" value="#336699">
 Hidden: <input type = "hidden" name = "username" value = "me">
 
+<!-- Por questões de acessibilidade, é recomendado colocar uma label -->
+<label>Name:
+  <input type="text" name="name" value="unknown">
+</label>
+
 Address: <input type="text"                              <!-- Tipo do input               -->
                 name="address"                           <!-- Nome do input               -->
                 placeholder="your main address"          <!-- Texto que aparece na caixa  -->
@@ -285,6 +290,16 @@ Address: <input type="text"                              <!-- Tipo do input     
 
 Number: <input type="number" name="number"               <!-- Podem ter vários atributos  -->
                value="42" max = 50 min = 10 step = 2 >
+
+<!-- Há também opção de colocar um field set, como um grupo de inputs -->
+<form>
+  <fieldset>
+    <legend>Personal data:</legend>
+    <label>Name: <input type="text"></label>
+    <label>Email: <input type="text"></label>
+    <label>Date of birth: <input type="text"></label>
+  </fieldset>
+</form>
 ```
 
 Datas em HTML
@@ -324,7 +339,7 @@ Checkbox
 <input type="radio" name="gender" value="female">Female
 ```
 
-Upload de ficheiros e envoi
+Upload de ficheiros e envio
 
 ```html
 <p>Upload:</p> 
@@ -372,7 +387,16 @@ Itens selecionáveis, grupos e listas
 </datalist>
 ```
 
-<p>some tests</p>
+Caracteres especiais em HTML
+
+```note
+Less than sign (<): &lt;
+Greater than sign (>): &gt;
+Ampersand (&): &amp;
+Double quote sign ("): &quot;
+Non-breaking space ( ): &nbsp;
+```
+
 
 <br>
 
