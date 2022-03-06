@@ -43,10 +43,10 @@ Estrutura básica:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>                                <!-- Head: O nome do topo da página do browser -->
-        <title>A simple web page</title>
+    <head>                                <!-- Head: O nome do topo da página do browser     -->
+        <title>A simple web page</title>  <!-- Aqui é definida a metadata, ver mais à frente -->
     </head>
-    <body>                                <!-- Body: Todo o outro conteúdo da página     -->
+    <body>                                <!-- Body: Todo o outro conteúdo da página         -->
         <p>Content</p>
     </body>
 </html>
@@ -418,7 +418,18 @@ Media
 <track></track>
 ```
 
+Metadata
 
+```html
+<head>
+  <meta name="?"          <!-- Nome da aplicação, autor, descrição, gerador, keywords -->
+        content="something useful">
+        charset="utf-8"   <!-- Character encoding -->
+</head>
+```
+
+Validação
+Há sites que permitem validar e ver os erros contidos no código HTML. Por exemplo [este]().
 
 <br>
 
