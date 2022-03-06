@@ -6,31 +6,31 @@ Além da sintaxe, é também importante a semântica que descreve o que cada pal
 ## Tópicos
 
 1. Elementos HTML
-    - [Tags](#1.1-Tags)
-    - [Atributos]()
-    - [IDs e Classes]()
+    - Tags
+    - Atributos
+    - IDs e Classes
 2. Documentos HTML
-    - [Estrutura básica]()
-    - [Caracteres em branco]()
-    - [Semântica]()
-    - [Imagens]()
-    - [Headings]()
-    - [Headers e footers]()
-    - [Listas]()
-    - [Tabelas]()
+    - Estrutura básica
+    - Caracteres em branco
+    - Semântica
+    - Imagens
+    - Headings
+    - Headers e footers
+    - Listas
+    - Tabelas
 3. Formulários
-    - [Estrutura básica]()
-    - [Tipos de input e labels]()
-    - [Datas]()
-    - [Botões]()
-    - [Checkbox]()
-    - [Ficheiros]()
-    - [Itens selecionáveis, grupos e listas]()
+    - Estrutura básica
+    - Tipos de input e labels
+    - Datas
+    - Botões
+    - Checkbox
+    - Ficheiros
+    - Itens selecionáveis, grupos e listas
 4. Outros
-    - [Caracteres especiais]()
-    - [Media]()
-    - [Metadata]()
-    - [Validação]()
+    - Caracteres especiais
+    - Media
+    - Metadata
+    - Validação
 
 ## 1 - Elementos HTML
 
