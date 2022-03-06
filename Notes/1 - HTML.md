@@ -276,7 +276,7 @@ Email: <input type="email" name="email" value="yourEmail@email.com">
 Search: <input type="search" name="number" value="something">
 URL: <input type="url" name="url" value="www.something.pt">
 Color: <input name="color" type="color" value="#336699">
-Hiden: <input type = "hiden" name = "username" value = "me">
+Hidden: <input type = "hidden" name = "username" value = "me">
 
 Address: <input type="text"                              <!-- Tipo do input               -->
                 name="address"                           <!-- Nome do input               -->
@@ -324,6 +324,7 @@ Upload de ficheiros
 </form>
 
 ```
+
 
 
 <br>
