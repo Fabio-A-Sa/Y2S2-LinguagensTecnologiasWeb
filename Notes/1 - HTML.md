@@ -272,6 +272,12 @@ Tipos de input:
 Date: <input type="date" name="date" value="2020-10-15">
 Password: <input type="password" name="password" value="mysecretpassword">
 Number: <input type="number" name="number" value="123">
+
+Address: <input type="text"                         <!-- Type -->
+                name="address" 
+                placeholder="your main address" 
+                required="required" 
+                disabled >
 ```
 
 
