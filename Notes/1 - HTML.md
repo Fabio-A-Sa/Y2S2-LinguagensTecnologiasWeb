@@ -276,13 +276,13 @@ Email: <input type="email" name="email" value="yourEmail@email.com">
 Search: <input type="search" name="number" value="something">
 URL: <input type="url" name="url" value="www.something.pt">
 
-Address: <input type="text"                         <!-- Tipo do input               -->
-                name="address"                      <!-- Nome do input               -->
-                placeholder="your main address"     <!-- Texto que aparece na caixa  -->
-                required="required"                 <!-- Se é de escrita obrigatória -->
-                disabled >                          <!-- Se é permitido escrita      -->
+Address: <input type="text"                              <!-- Tipo do input               -->
+                name="address"                           <!-- Nome do input               -->
+                placeholder="your main address"          <!-- Texto que aparece na caixa  -->
+                required="required"                      <!-- Se é de escrita obrigatória -->
+                disabled >                               <!-- Se é permitido escrita      -->
 
-Number: <input type="number" name="number"          <!-- Podem ter vários atributos  -->
+Number: <input type="number" name="number"               <!-- Podem ter vários atributos  -->
                value="42" max = 50 min = 10 step = 2 >
 ```
 
