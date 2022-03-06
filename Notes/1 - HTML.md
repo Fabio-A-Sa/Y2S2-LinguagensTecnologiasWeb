@@ -258,6 +258,14 @@ Para não estar a repetir atributos em todas as tags de determinadas linhas ou c
 </table>
 ```
 
+Forms, `<forms>`, tem uma action que indica qual é do URL do serviço que irá processar os dados e um method, que pode ser "get" quando os valores são mandados por URL ou "post" quando são mandados por HTTP:
+
+```html
+<form action="save.php" method="get">
+    <!-- form controls go here -->
+</form>
+```
+
 
 
 <br>
