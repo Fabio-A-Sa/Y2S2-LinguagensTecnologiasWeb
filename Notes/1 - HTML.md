@@ -6,7 +6,7 @@ Além da sintaxe, é também importante a semântica que descreve o que cada pal
 ## Tópicos
 
 1. Elementos HTML
-    - [Tags]()
+    - [Tags](#1.1-Tags)
     - [Atributos]()
     - [IDs e Classes]()
 2. Documentos HTML
