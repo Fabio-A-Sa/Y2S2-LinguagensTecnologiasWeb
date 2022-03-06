@@ -209,3 +209,72 @@
         </article>
     </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4 - Formulario</title>
+        <meta
+            name = "LTW Exercise 4"
+            encoding = "utf-8"
+        >
+    </head>
+    <body>
+        <form action="form.html" method="post">
+            <fieldset>
+                <legend>
+                    <h2>Formulario</h2>
+                </legend>
+                <label><strong>Nome: </strong><input name="nome" type="text" required></label><br>
+                <label>
+                    <strong>Idade: </strong><br>
+                    <input type="radio" name="age" value="18">&lt;18<br>
+                    <input type="radio" name="age" value="19-35">19-35<br>
+                    <input type="radio" name="age" value="36-48">36-48<br>
+                    <input type="radio" name="age" value="49">&gt;49
+                </label><br>
+                <label>
+                    <strong>Profissao: </strong>
+                    <input name="profissao" list="profissoes">
+                    <datalist id = "profissoes">
+                        <option selected>Engenheiro</option>
+                        <option>Astronauta</option>
+                        <option>Professor</option>
+                        <option>Ministro</option>
+                    </datalist>
+                </label><br>
+                <label>
+                    <strong>Pais: </strong>
+                    <input name="pais" list="paises" required>
+                    <datalist id = "paises">
+                        <option selected>Portugal</option>
+                        <option>Espanha</option>
+                        <option>Inglaterra</option>
+                        <option>Brasil</option>
+                    </datalist>
+                </label><br>
+                <label>
+                    <strong>Linguagens de interesse:</strong><br>
+                    <input type="checkbox" name="lang" value="cpp">C++<br>
+                    <input type="checkbox" name="lang" value="python">Python<br>
+                    <input type="checkbox" name="lang" value="java">Java<br>
+                    <input type="checkbox" name="lang" value="html">HTML<br>
+                    <input type="checkbox" name="lang" value="js">Javascript<br>
+                    <input type="checkbox" name="lang" value="c">C<br>
+                    <input type="checkbox" name="lang" value="assembly">Assembly
+                </label><br>
+                <label>
+                    <strong>O que achou do site?</strong>
+                    <input type="text">
+                </label>
+                </label><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<!--
+Com method="get"
+../form.html?nome=F%E1bio+S%E1&age=19-35&profissao=Engenheiro&pais=Portugal&lang=cpp&lang=python&lang=html
+-->
