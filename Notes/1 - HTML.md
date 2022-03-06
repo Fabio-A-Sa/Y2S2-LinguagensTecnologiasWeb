@@ -16,11 +16,21 @@ Além da sintaxe, é também importante a semântica que descreve o que cada pal
     - Imagens
     - Headings
     - Headers e footers
-    -
-
-
+    - Listas
+    - Tabelas
 3. Formulários
-4.
+    - Estrutura básica
+    - Tipos de input e labels
+    - Datas
+    - Botões
+    - Checkbox
+    - Ficheiros
+    - Itens selecionáveis, grupos e listas
+4. Outros
+    - Caracteres especiais
+    - Media
+    - Metadata
+    - Validação
 
 ## 1 - Elementos HTML
 
@@ -181,6 +191,7 @@ Elementos de secção e significados. Headers e Footers:
 </main>
 ```
 
+### 2.6 - Listas
 As listas de elementos, `<li>`, podem ser ordenadas `<ol>` ou não ordenadas `<ul>`. Podem ter inúmeros atributos:
 
 ```html
@@ -209,6 +220,7 @@ As listas `<dl>` podem ser usadas como dicionários, com termos `<dt>` e defini�
 </dl>
 ````
 
+### 2.7 - Tabelas
 Tabelas `<table>` são constituidas por linhas `<tr>` e células de dados `<td>`. Os cabeçalhos podem ser do tipo `<th>` para headers e indicar o seu scope (se é de coluna ou linha). Pode ter um título `<caption>`:
 
 ```html
@@ -280,6 +292,10 @@ Para não estar a repetir atributos em todas as tags de determinadas linhas ou c
 </table>
 ```
 
+## 3 - Formulários
+
+### 3.1 - Estrutura básica
+
 Forms, `<forms>`, tem uma action que indica qual é do URL do serviço que irá processar os dados e um method, que pode ser "get" quando os valores são mandados por URL ou "post" quando são mandados por HTTP:
 
 ```html
@@ -287,6 +303,8 @@ Forms, `<forms>`, tem uma action que indica qual é do URL do serviço que irá 
     <!-- form controls go here -->
 </form>
 ```
+
+### 3.2 - Tipos de input e labels
 
 Tipos de input:
 
@@ -325,7 +343,7 @@ Number: <input type="number" name="number"               <!-- Podem ter vários 
 </form>
 ```
 
-Datas em HTML
+### 3.3 - Datas 
 
 ```html
 Date: <input name="date" type="date" value="2020-10-20" min="2020-10-01">
@@ -335,7 +353,7 @@ Month: <input name="month" type="month" value="2020-10">
 Week: <input name="week" type="week" value="2020-W09">
 ```
 
-Botões
+### 3.4 - Botões
 
 ```html
 <form>
@@ -348,7 +366,7 @@ Botões
 </form>
 ```
 
-Checkbox
+### 3.5 - Checkbox
 
 ```html
  <!-- :vehicle=Bike&vehicle=Car -->
@@ -362,6 +380,7 @@ Checkbox
 <input type="radio" name="gender" value="female">Female
 ```
 
+### 3.6 - Ficheiros
 Upload de ficheiros e envio
 
 ```html
@@ -377,7 +396,7 @@ Upload de ficheiros e envio
 </form>
 ```
 
-Itens selecionáveis, grupos e listas
+### 3.7 - Itens selecionáveis, grupos e listas
 
 ```html
 <!-- Uma lista simples de elemntos -->
@@ -410,7 +429,9 @@ Itens selecionáveis, grupos e listas
 </datalist>
 ```
 
-Caracteres especiais em HTML
+## 4 - Outros
+
+### 4.1 - Caracteres especiais
 
 ```note
 Less than sign (<): &lt;
@@ -420,7 +441,7 @@ Double quote sign ("): &quot;
 Non-breaking space ( ): &nbsp;
 ```
 
-Media
+### 4.2 - Media
 
 ```html
 <!-- Canvas -->
@@ -441,7 +462,7 @@ Media
 <track></track>
 ```
 
-Metadata
+### 4.3 - Metadata
 
 ```html
 <head>
@@ -451,7 +472,7 @@ Metadata
 </head>
 ```
 
-Validação <br>
+### 4.4  Validação
 Há sites que permitem validar e ver os erros contidos no código HTML. Por exemplo [este]().
 
 <br>
