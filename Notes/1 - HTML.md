@@ -266,6 +266,14 @@ Forms, `<forms>`, tem uma action que indica qual é do URL do serviço que irá 
 </form>
 ```
 
+Tipos de input:
+
+```html
+Date: <input type="date" name="date" value="2020-10-15">
+Password: <input type="password" name="password" value="mysecretpassword">
+Number: <input type="number" name="number" value="123">
+```
+
 
 
 <br>
