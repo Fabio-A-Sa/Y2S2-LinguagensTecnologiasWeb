@@ -168,8 +168,8 @@ Para dar destaque e volume ao texto apresentado:
 Elementos de secção e significados. Headers e Footers:
 
 ```html
-<article>Usado para um elemento completo e estruturado, um blog post ou comentário</article>
-<section>Usado com heading por um grupo temático</section>
+<section>Usado com heading por um grupo temático. Contém várias sections.</section>
+<article>Usado para um elemento completo e estruturado, um blog post ou comentário.</article>
 <nav>Uma secção com links</nav>
 <aside>Para um conteúdo separado do geral. Uma espécie de à parte</aside>
 
