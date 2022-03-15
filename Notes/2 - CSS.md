@@ -14,3 +14,38 @@ p {                     /* seletor */
 }
 ```
 
+### Linking to HTML
+
+1. Inline
+
+```css
+<p style="color: red">
+  This is a red paragraph.
+</p>
+```
+
+2. Internal Style Sheet
+
+```css
+<head>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a red paragraph.</p>
+</body>
+```
+
+3. External Style Sheet
+
+```css
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>This is a red paragraph.</p>
+</body>
+```
