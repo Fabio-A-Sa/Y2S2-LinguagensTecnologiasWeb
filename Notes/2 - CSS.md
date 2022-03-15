@@ -49,3 +49,23 @@ p {                     /* seletor */
     <p>This is a red paragraph.</p>
 </body>
 ```
+
+## Selectors
+
+- Type
+
+```css
+a
+```
+
+- Class
+
+```css
+
+````
+
+- Id
+
+```css
+
+```
