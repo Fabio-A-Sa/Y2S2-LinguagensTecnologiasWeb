@@ -125,4 +125,30 @@ Forma de selecionar logicamente partes que não são realmente elementos, como p
 p::first-letter                             /* Primeira letra do parágrafo */
 p::first-line                               /* Primeira linha do parágrado */
 article > p:first-of-type::first-letter     /* Primeira letra do primeiro parágrafo que é filho direto de um artigo */
+
+blockquote::before { content: open-quote;  }
+blockquote::after  { content: close-quote; }
+```
+
+### Principais erros
+
+#### 1 - Leitura
+
+```css
+/*
+Parágrafos que têm a classe intro que são os primeiros filhos de uma secção que é descendente direta de qualquer tipo que é o próximo irmão de uma nav que tem classe menu
+*/
+nav.menu + * > section :first-child p.intro
+```
+
+#### 2 - Espaços
+
+Os espaços contam. Exemplos de falhas:
+
+```css
+p.intro             /* parágrafo com classe intro */
+p .intro            /* parágrafos que são pais de elementos que têm a classe intro */
+
+p:first-child       /* primeiro filho de um parágrafo */
+p :first-child      /* primeiro filho de um descendente de um parágrafo */
 ```
