@@ -221,11 +221,13 @@ body { font-size: 2em;  } /* 64px the parent is the html element */
 
 Todos os elementos de uma página são rectangulares e têm uma borda, visível ou não. O padding é a parte interior, entre o conteúdo e a borda, e a margin é a parte externa entre a borda e outro elemento.
 
-<img src = "https://web.fe.up.pt/~arestivo/slides/assets/css3/box-model.svg" >
+<p align = "center" >
+    <img src = "https://web.fe.up.pt/~arestivo/slides/assets/css3/box-model.svg" >
+</p>
 
 ```css
 section {
-    box-sizing: border-box; /* O comprimento e largura passam a incluir o padding e a borda -> é mais fácil de trabalhar assim */
+    box-sizing: border-box; /* Comprimento/largura passam a incluir padding/borda -> mais fácil de trabalhar */
     width: auto;
     max-width: 40em;        /* Se depender do tamanho do pai, por exemplo */
     height: 50px;
@@ -237,9 +239,10 @@ section {
 
 Seguem sempre a ordem top, right, bottom, left (sentido horário, a começar no meio-dia. A distância entre dois elementos não é simplesmente formada, processo conhecido como border colapse, é dado pela fórmula:
 
-```python3
-int borderColl(Element e1, Element e2):
-    return max(e1->margin, e2->margin)
+```c++
+int borderCollapse(const Element &e1, const Element &e2) {
+    return std::max(e1->margin, e2->margin);
+}
 ```
 
 #### Alguns exemplos de transformações em CSS
