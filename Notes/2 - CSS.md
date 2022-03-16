@@ -87,7 +87,9 @@ Forma de selecionar elementos existentes com base no seu estado, como por exempl
 a:visited           /* Link ainda não visitado */
 a:link              /* Link visitado */
 a:active            /* Link ativo, está a ser clicado */
+
 a:hover             /* O cursor está por cima do elemento */
+
 input:focus         /* the input is focused */
 input:valid         /* the data in the input is valid */
 input:invalid       /* the data in the input is not valid */
@@ -96,12 +98,31 @@ input:optional      /* the input is optional */
 input:read-only     /* the input is read-only */
 input:read-write    /* the input is not read-only */
 radio:checked       /* the radio button is checked */
+
+:target             /* scroll automático até à seção de id */
+section:target      /* scroll automático até à seção de id */
+
+p:first-child       /* primeiro filho de qualquer p */
+:last-child         /* qualquer elemento que é o último child dos seus parentes  */
+h1:first-of-type    /* elementos que são primeiros filhos de pais que têm qualquer tipo */
+
+p:nth-child(2)      /* O segundo filho  */
+p:nth-child(2n+1)   /* Só filhos de número ímpar */
+p:nth-child(-n+3)   /* Só os três primeiros filhos */
+p:only-child        /* parágrafos que são o único filho dos seus parentes */
+p:empty             /* parágrafos que não têm filhos */
+
+section :not(article) p     /* p que não descende de um artigo mas que descende de uma secção */
+:not(article) > p           /* p que não descende diretamente de um artigo */
+:not(article) p             /* p que não descende de um artigo. Cuidado com esta. */
 ```
 
 ### Pseudo-elements
 
-Forma de selecionar de forma lógica partes que não são realmente elementos, como por exemplo a primeira letra do parágrafo.
+Forma de selecionar logicamente partes que não são realmente elementos, como por exemplo a primeira letra do parágrafo.
 
 ```css
-
+p::first-letter                             /*  */
+p::first-line                               /**/
+article > p:first-of-type::first-letter     /**/
 ```
