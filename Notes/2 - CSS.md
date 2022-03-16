@@ -267,3 +267,19 @@ int borderCollapse(const Element &e1, const Element &e2) {
 }
 ```
 
+## Background image
+
+```css
+nav#menu {
+    background-image: url("squares.png");
+    background-position: left top;          /* Imagem com o canto superior esquerdo encostado*/
+
+    /*
+        fixed -> imagem de fundo fixa em relação ao ponto de vista
+        scroll -> em relação ao elemento
+        local -> em relação ao conteúdo
+    */
+    background-attachment: local;
+    background-repeat: repeat;
+}
+```
