@@ -237,7 +237,7 @@ section {
 
 ### Margin, padding e border
 
-Seguem sempre a ordem top, right, bottom, left (sentido horário, a começar no meio-dia. A distância entre dois elementos não é simplesmente formada, processo conhecido como border colapse, é dado pela fórmula:
+Seguem sempre a ordem top, right, bottom, left (sentido horário, a começar no meio-dia). A distância entre dois elementos não é simplesmente formada, processo conhecido como border colapse, é dado pela fórmula:
 
 ```c++
 int borderCollapse(const Element &e1, const Element &e2) {
