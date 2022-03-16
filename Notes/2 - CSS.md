@@ -165,3 +165,25 @@ p {
     opacity: 0.5;                   /* Definir a transparência. 1 é opaco, 0 transparente. */
 }     
 ```
+
+## Fontes
+
+```css
+/*
+    Dá para importar novas fontes com o Google-Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+p {
+    font-family: "Arial";           /* Podemos escolher as fontes. Usar safe-fonts. Slide 54. */
+    font-family: serif;             /* Serif para leituras, sans-serif para títulos */
+}
+
+p.introduction {
+    font-weight: bold;              /* Definição do peso da fonte */
+}
+
+span.autor {
+    font-style: italic;             /* Definição do estilo da fonte*/
+}
+```
