@@ -56,6 +56,7 @@ p {                     /* seletor */
 - Class: `.class_name`
 - Id: `#id_name`
 - Universal: `*`
+- Group: `,`
 
 ### Attribute selectors
 
@@ -69,3 +70,11 @@ p {                     /* seletor */
 [attribute*=value]      – containing value.
 ```
 
+### Combining selectors
+
+```css
+aside a /* Seleciona todos os 'a' que descendem de um 'aside' */
+aside > a /* Seleciona todos os 'a' que descendem diretamente de um 'aside' */
+.into + p /* Seleciona o próximo irmão 'p' de um p que contenha a classe 'intro' */
+.selected ~li /* Seleciona todos os próximos irmãos 'li' depois de um 'li' de classe 'selected' */
+```
