@@ -60,11 +60,12 @@ p {                     /* seletor */
 ### Attribute selectors
 
 ```css
-[attribute] – exists.
-[attribute=value] – equals.
-[attribute~=value] – containing value (word).
-[attribute|=value] – starting with value (word).
-[attribute^=value] – starting with value.
-[attribute$=value] – ending with value.
-[attribute*=value] – containing value.
+[attribute]             – exists.
+[attribute=value]       – equals.
+[attribute~=value]      – containing value (word).
+[attribute|=value]      – starting with value (word).
+[attribute^=value]      – starting with value.
+[attribute$=value]      – ending with value.
+[attribute*=value]      – containing value.
 ```
+
