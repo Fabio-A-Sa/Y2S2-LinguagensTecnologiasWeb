@@ -193,5 +193,11 @@ span.autor {
 #menu a {
     /* none, underline, overline, line-throught */
     text-decoration: none;          /* Para remover underlines de links */
+
+    /* left, right, center, justify */
+    text-align: center;             /* Em relação ao container que o contém */
+
+    /* uppercase, lowercase, capitalize */
+    text-transform: capitalize;     /* todo o 'a' descendente do id menu fica capitalizado*/
 }
 ```
