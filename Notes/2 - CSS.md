@@ -152,3 +152,15 @@ p .intro            /* parágrafos que são pais de elementos que têm a classe 
 p:first-child       /* primeiro filho de um parágrafo */
 p :first-child      /* primeiro filho de um descendente de um parágrafo */
 ```
+
+## Cores
+
+```css
+p { 
+    color: green;                   /* Todos os parágrafos ficam agora verdes */
+    background-color: #336699;      /* A cor pode conter RGB assim... */
+    color: rgb(50, 200, 100);       /* ... ou assim */
+    opacity: 0.5;                   /* Definir a transparência. 1 é opaco, 0 transparente. */
+}     
+
+```
