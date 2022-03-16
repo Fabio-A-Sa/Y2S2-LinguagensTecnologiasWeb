@@ -283,3 +283,25 @@ nav#menu {
     background-repeat: repeat;
 }
 ```
+
+### Exemplo de uma transformação
+
+```css
+.box {
+    margin: 0 auto;
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s, border-radius 4s;
+}
+.box:hover {
+    background-color: #FFCCCC;
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
+}
+```
+
+## O Flow da página Web
+
