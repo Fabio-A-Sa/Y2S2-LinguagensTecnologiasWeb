@@ -81,7 +81,27 @@ aside > a           /* Seleciona todos os 'a' que descendem diretamente de um 'a
 
 ### Pseudo-classes
 
+Forma de selecionar elementos existentes com base no seu estado, como por exemplo links visitados.
 
+```css
+a:visited           /* Link ainda não visitado */
+a:link              /* Link visitado */
+a:active            /* Link ativo, está a ser clicado */
+a:hover             /* O cursor está por cima do elemento */
+input:focus         /* the input is focused */
+input:valid         /* the data in the input is valid */
+input:invalid       /* the data in the input is not valid */
+input:required      /* the input is mandatory */
+input:optional      /* the input is optional */
+input:read-only     /* the input is read-only */
+input:read-write    /* the input is not read-only */
+radio:checked       /* the radio button is checked */
+```
 
 ### Pseudo-elements
 
+Forma de selecionar de forma lógica partes que não são realmente elementos, como por exemplo a primeira letra do parágrafo.
+
+```css
+
+```
