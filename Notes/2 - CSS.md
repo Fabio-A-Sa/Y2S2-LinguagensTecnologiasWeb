@@ -181,6 +181,7 @@ p {
 
 p.introduction {
     font-weight: bold;              /* Definição do peso da fonte */
+    font-size: 1.2em;               /* Definição do tamanho. Ver mais à frente */
 }
 
 span.autor {
