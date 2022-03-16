@@ -78,3 +78,10 @@ aside > a /* Seleciona todos os 'a' que descendem diretamente de um 'aside' */
 .into + p /* Seleciona o próximo irmão 'p' de um p que contenha a classe 'intro' */
 .selected ~li /* Seleciona todos os próximos irmãos 'li' depois de um 'li' de classe 'selected' */
 ```
+
+### Pseudo-classes
+
+
+
+### Pseudo-elements
+
