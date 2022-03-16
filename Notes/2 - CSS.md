@@ -169,9 +169,7 @@ p {
 ## Fontes
 
 ```css
-/*
-    Dá para importar novas fontes com o Google-Fonts
-*/
+/* Dá para importar novas fontes com o Google-Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 
 p {
@@ -186,5 +184,14 @@ p.introduction {
 
 span.autor {
     font-style: italic;             /* Definição do estilo da fonte*/
+}
+```
+
+## Texto
+
+```css
+#menu a {
+    /* none, underline, overline, line-throught */
+    text-decoration: none;          /* Para remover underlines de links */
 }
 ```
