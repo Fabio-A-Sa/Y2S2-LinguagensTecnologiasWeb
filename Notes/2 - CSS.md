@@ -206,6 +206,61 @@ span.autor {
 
 ## Unidades de comprimento
 
-```css
+- `Absolute units` {mm, cm, in, pt, pc, px}, pouco usadas menos o px;
+- `Font relative units` {rem, em}, **rem** para fonte do elemento raiz e **em** para fonte do elemento pai;
+- `Viewport-percentage units`{vw, vh, vmin, vmax} para partes visíveis do documento/janela em 1% do valor original. If the viewport is 600x400 pixels, vw = 6px, vh = 4px, vmin = 4px, vmax = 6px.
+- `Percentage` { $i% }, pouco usadas, relativas ao parente
 
+```css
+html { font-size: 2rem; } /* 32px */
+p    { font-size: 2rem; } /* 64px regardless of its location     */
+body { font-size: 2em;  } /* 64px the parent is the html element */
 ```
+
+## Box model
+
+Todos os elementos de uma página são rectangulares e têm uma borda, visível ou não. O padding é a parte interior, entre o conteúdo e a borda, e a margin é a parte externa entre a borda e outro elemento.
+
+<img src = "https://web.fe.up.pt/~arestivo/slides/assets/css3/box-model.svg" >
+
+```css
+section {
+    box-sizing: border-box; /* O comprimento e largura passam a incluir o padding e a borda -> é mais fácil de trabalhar assim */
+    width: auto;
+    max-width: 40em;        /* Se depender do tamanho do pai, por exemplo */
+    height: 50px;
+    min-height: 100px;      /* Se depender do tamanho do pai, por exemplo */
+}
+```
+
+### Margin, padding e border
+
+Seguem sempre a ordem top, right, bottom, left (sentido horário, a começar no meio-dia. A distância entre dois elementos não é simplesmente formada, processo conhecido como border colapse, é dado pela fórmula:
+
+```python3
+int borderColl(Element e1, Element e2):
+    return max(e1->margin, e2->margin)
+```
+
+#### Alguns exemplos de transformações em CSS
+
+```css
+#menu {
+    padding: 1em;           /* Modifica tudo */
+    margin: 1.5em 1em 3em;  /* Top = 1.5em, Right/Left = 1em, Bottom = 3em */
+
+    /*
+    border: [width] [style] [color]
+    style :: dotted, dashed, solid, double, groove, ridle, inset, outset
+    Existem ao todo 12 propriedades modificáveis: border-{top, right, left, bottom}-{style, width, color}
+    */
+    border: 1px solid blue;
+
+    /*
+    boder-{top, bottom}-{right, left}-radius para arredondar cantos
+    para fazer um círculo, border-radius = 50%;
+    */
+    border-radius = 50%;
+}
+```
+
