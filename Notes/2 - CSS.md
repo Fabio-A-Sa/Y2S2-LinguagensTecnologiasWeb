@@ -122,7 +122,7 @@ section :not(article) p     /* p que não descende de um artigo mas que descende
 Forma de selecionar logicamente partes que não são realmente elementos, como por exemplo a primeira letra do parágrafo.
 
 ```css
-p::first-letter                             /*  */
-p::first-line                               /**/
-article > p:first-of-type::first-letter     /**/
+p::first-letter                             /* Primeira letra do parágrafo */
+p::first-line                               /* Primeira linha do parágrado */
+article > p:first-of-type::first-letter     /* Primeira letra do primeiro parágrafo que é filho direto de um artigo */
 ```
