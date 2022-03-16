@@ -164,5 +164,4 @@ p {
     color: rgb(50, 200, 100);       /* ... ou assim */
     opacity: 0.5;                   /* Definir a transparência. 1 é opaco, 0 transparente. */
 }     
-
 ```
