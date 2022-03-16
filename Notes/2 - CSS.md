@@ -1,12 +1,12 @@
 # 2 - CSS
 
-Cascading Style Sheet, linguagem usada para formatar o estilo da página HTML. O CSS 1 foi criado em 1996 e atualmente está em vigor a versão 3, datada de 2011-2012. É baseada em dois conceitos: 
+Cascading Style Sheet é a linguagem usada para formatar o estilo da página HTML. O CSS 1 foi criado em 1996 e atualmente está em vigor a versão 3, datada de 2011-2012. É baseada em dois conceitos: 
 
 1. Seletores
-Permite selecionar elementos do HTML para aplicar estilos
+Permitem selecionar elementos do HTML para aplicar estilos
 
 2. Propriedades
-Define o estilo de cada elemento
+Definem o estilo de cada elemento
 
 ```css
 p {                     /* seletor */
@@ -52,20 +52,19 @@ p {                     /* seletor */
 
 ## Selectors
 
-- Type
+- Type: `a`
+- Class: `.class_name`
+- Id: `#id_name`
+- Universal: `*`
+
+### Attribute selectors
 
 ```css
-a
-```
-
-- Class
-
-```css
-
-````
-
-- Id
-
-```css
-
+[attribute] – exists.
+[attribute=value] – equals.
+[attribute~=value] – containing value (word).
+[attribute|=value] – starting with value (word).
+[attribute^=value] – starting with value.
+[attribute$=value] – ending with value.
+[attribute*=value] – containing value.
 ```
