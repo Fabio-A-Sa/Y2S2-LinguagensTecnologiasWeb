@@ -136,7 +136,9 @@ blockquote::after  { content: close-quote; }
 
 ```css
 /*
-Parágrafos que têm a classe intro que são os primeiros filhos de uma secção que é descendente direta de qualquer tipo que é o próximo irmão de uma nav que tem classe menu
+Parágrafos que têm a classe intro que são os primeiros filhos de uma secção que é
+descendente direta de qualquer tipo que é o próximo irmão de uma nav que tem class
+menu
 */
 nav.menu + * > section :first-child p.intro
 ```
