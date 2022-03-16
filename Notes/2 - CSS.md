@@ -124,7 +124,7 @@ Forma de selecionar logicamente partes que não são realmente elementos, como p
 ```css
 p::first-letter                             /* Primeira letra do parágrafo */
 p::first-line                               /* Primeira linha do parágrado */
-article > p:first-of-type::first-letter     /* Primeira letra do primeiro parágrafo que é filho direto de um artigo */
+article > p:first-of-type::first-letter     /* Letra do primeiro parágrafo que é filho direto de um artigo */
 
 blockquote::before { content: open-quote;  }
 blockquote::after  { content: close-quote; }
