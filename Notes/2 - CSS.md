@@ -30,6 +30,21 @@ p {                     /* seletor */
 4. Fontes
 5. Texto
 6. Unidades de comprimento
+7. Box model
+    - Margin, padding e border
+    - Transformações
+    - Background image
+8. Flow
+    - Mudança do flow default da página
+9. Flexboxs
+    - Grow and Shrink
+10. Grid
+11. Cascading
+12. Variáveis
+13. Sites responsivos e adaptativos
+    - Como criar sites responsivos
+    - HTML e CSS
+14. Validação
 
 ### Linking to HTML
 
