@@ -377,3 +377,28 @@ Por default, flex-grow: 0 (os elementos não esticam por padrão) e flex-shrink:
 
 Permite colocar e alinhar elementos em linhas e em colunas de diferentes tamanhos. Por default, `display: grid` aparece sempre tudo numa coluna.
 
+```css
+.container {
+  grid-template-columns: 5em 1fr 2fr;           /* 3 colunas */
+  grid-template-rows: repeat(2, 2em);           /* 2 linhas */
+}
+```
+
+Definição de áreas de forma mais visual. De forma mais exaustiva ver [aqui](https://web.fe.up.pt/~arestivo/slides/?s=css3#145).
+
+```css
+.container {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "header header"
+                       "menu1  content"
+                       "menu2  content"
+                       "menu2  footer";
+}
+.header { grid-area: header; }
+.menu1 { grid-area: menu1; }
+.menu2 { grid-area: menu2; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }
+```
+
