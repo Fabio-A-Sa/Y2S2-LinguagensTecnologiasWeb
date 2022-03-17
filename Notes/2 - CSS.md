@@ -373,3 +373,7 @@ Por default, flex-grow: 0 (os elementos não esticam por padrão) e flex-shrink:
 }
 ```
 
+## Grid
+
+Permite colocar e alinhar elementos em linhas e em colunas de diferentes tamanhos. Por default, `display: grid` aparece sempre tudo numa coluna.
+
