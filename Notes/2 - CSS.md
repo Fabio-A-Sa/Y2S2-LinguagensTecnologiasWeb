@@ -14,6 +14,14 @@ p {                     /* seletor */
 }
 ```
 
+## Tópicos
+
+1. Linking to HTML
+    - Inline
+    - Internal Style Sheet
+    - External Style Sheet
+2. 
+
 ### Linking to HTML
 
 1. Inline
