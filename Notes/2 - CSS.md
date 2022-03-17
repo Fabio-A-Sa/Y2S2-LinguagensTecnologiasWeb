@@ -402,3 +402,5 @@ Definição de áreas de forma mais visual. De forma mais exaustiva ver [aqui](h
 .footer { grid-area: footer; }
 ```
 
+## Cascading
+
