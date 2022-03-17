@@ -367,5 +367,9 @@ Por default, flex-grow: 0 (os elementos não esticam por padrão) e flex-shrink:
 .item:nth-child(2) {
   flex-grow: 2;  
 }
+
+.container { 
+    gap: 2em 1em; /* Intervalo entre linhas (row-gap), intervalo entre colunas (column-gap) */
+}
 ```
 
