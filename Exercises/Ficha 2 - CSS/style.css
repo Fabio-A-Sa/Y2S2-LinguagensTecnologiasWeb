@@ -5,6 +5,10 @@ body {
     background-color: white;
 }
 
+.hamburger, #hamburger {
+    display: none;
+}
+
 header a, #menu a {
     text-decoration: none;
 }
@@ -36,4 +40,14 @@ section:hover {
 #menu {
     background-color: rgb(224, 216, 197);
     margin: 1em 0em 1em;
+}
+
+#menu ul { 
+    list-style-type:none;
+}
+
+#menu:nth-child(1) {
+    padding: 2em;
+    margin: 1em;
+    border-color: red green blue;
 }
