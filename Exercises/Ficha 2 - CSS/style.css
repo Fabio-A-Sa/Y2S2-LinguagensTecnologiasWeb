@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+body a, a:visited, a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+body {
+    
+}
+
 p:hover {
     color: white;
 }
@@ -5,3 +16,4 @@ p:hover {
 section:hover {
     background-color: #2A2F33 
 }
+
