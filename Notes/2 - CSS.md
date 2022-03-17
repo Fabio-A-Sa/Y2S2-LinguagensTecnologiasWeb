@@ -436,9 +436,29 @@ body header {
 ### Como criar sites responsivos:
 
 ```html
-<!-- Indicação expressa no meta do head em html -->
+<!-- Indicação expressa para o navegador no meta do head em html -->
 <meta name="viewport" 
       content="width=device-width, initial-scale=1.0"
 >
 ```
 
+Podem existir diversos CSS indicados no HTML (1) ou só um ficheiro CSS em que existem separações de acordo com os diversos tamanhos de display. <br>
+
+1. 
+
+```html
+<link rel="stylesheet"
+      media="(min-width: 600px) and (max-width: 800px)"
+      href="medium.css" 
+/>
+```
+
+2. 
+
+```css
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+```
