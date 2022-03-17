@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
 
-body a, a:visited, a:hover {
-    text-decoration: none;
-    color: blue;
+body {
+    padding: 1em;
+    background-color: white;
 }
 
-body {
-    
+header a, #menu a {
+    text-decoration: none;
+}
+
+header a { color: white; }
+#menu a { color: black; }
+
+header {
+    background-color: #046DD5;
+    padding: 1rem;
+}
+
+header h1, header h2 {
+    font-family: Lora;
+}
+
+header.signup {
+    font-family: Poppins;
 }
 
 p:hover {
@@ -17,3 +33,7 @@ section:hover {
     background-color: #2A2F33 
 }
 
+#menu {
+    background-color: rgb(224, 216, 197);
+    margin: 1em 0em 1em;
+}
