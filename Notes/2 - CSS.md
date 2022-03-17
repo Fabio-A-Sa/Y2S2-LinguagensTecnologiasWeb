@@ -305,3 +305,15 @@ nav#menu {
 
 ## O Flow da página Web
 
+O fluxo da página é por default da esquerda para a direita e de cima para baixo. Podemos ter elementos:
+
+- `Em bloco`, ocupam a linha toda com o mesmo bloco. Não ocupam mais espaço vertical por isso.
+- `Inline`, cada elemento ocupa o mínimo possível lateralmente, e em cada linha há dois ou mais.
+- `None`, remove o elemento da página completamente.
+- `Inline-block`, ocupam espaço vertical e horizontal.
+
+```css
+img {
+    display: block;
+}
+```
