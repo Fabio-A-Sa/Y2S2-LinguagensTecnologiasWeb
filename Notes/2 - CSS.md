@@ -325,3 +325,47 @@ img {
 - `Fixed`: o elemento deixa de fazer parte do flow, deixa de ocupar espaço e fica noutra camada, de maneira a que o scroll não o mexe. Muito interessante para menus.
 - `Absolute`: fica noutra camada, deixa de ocupar espaço e fica posicionado em relação ao parente mais próximo ou a outro float que esteja do lado.
 - `Float`: remove o elemento do flow do documento e deixa-o para a direita ou para a esquerda em relação ao partente mais próximo. Interessante para textos / imagens e o texto à volta da imagem. A opção "clear" garante que nenhum elemento seguinte ocupe a outra parte da linha.
+
+## Flexbox
+
+Para que o parent e os seus fihos sejam flexíveis e adaptáveis a diferentes tipos de display. Os elementos da flexbox não podem ser do tipo float e as margens não colapsam com as margens do conteúdo. <br>
+O `main axis`é o eixo dos x, onde a maioria dos dados ficarão baseados.
+
+```css
+.container {
+    display: flex;              /* Comportamento padrão */
+    flex-direction: column;     /* Por coluna, como block */
+    flex-wrap: wrap;            /* Agrupamento de elementos */
+
+    /*
+    Para alinhar os conteúdos entre si, inline
+    flex-start, flex-end, center, space-around, space-between, space-evenly
+    */
+    justify-content: flex-start;
+
+    /*
+    Para alinhar os blocos por cima, por baixo...
+    flex-start, flex-end, center, baseline, stretch
+    */
+    align-items: flex-start;
+
+    /*
+    Para alterar a ordem original de listas ou elementos
+    */
+    order: 3;
+}
+```
+
+### Encolher e Esticar / Grow and Shrink
+
+Por default, flex-grow: 0 (os elementos não esticam por padrão) e flex-shrink: 1 (os elementos encolhem na mesma proporção)
+
+```css
+.item:nth-child(1) {
+  flex-grow: 1;
+}
+.item:nth-child(2) {
+  flex-grow: 2;  
+}
+```
+
