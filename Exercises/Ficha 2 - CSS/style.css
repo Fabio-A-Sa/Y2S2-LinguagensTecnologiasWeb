@@ -39,15 +39,14 @@ section:hover {
 
 #menu {
     background-color: rgb(224, 216, 197);
-    margin: 1em 0em 1em;
 }
 
 #menu ul { 
     list-style-type:none;
+    font-family: Poppins;
 }
 
-#menu:nth-child(1) {
-    padding: 2em;
-    margin: 1em;
+#menu ul li {
     border-color: red green blue;
+    border-bottom: 0.5em solid red;
 }
