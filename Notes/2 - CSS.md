@@ -20,7 +20,12 @@ p {                     /* seletor */
     - Inline
     - Internal Style Sheet
     - External Style Sheet
-2. 
+2. Selectors
+    - Attribute selectors
+    - Combining Selectors
+    - Pseudo-classes
+    - Pseudo-elements
+    - Principais erros na seleção
 
 ### Linking to HTML
 
