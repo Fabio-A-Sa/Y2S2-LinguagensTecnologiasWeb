@@ -324,4 +324,4 @@ img {
 - `Relative`: relativo à sua posição original. Dá para cima, baixo, direita e esquerda. Ocupa espaço.
 - `Fixed`: o elemento deixa de fazer parte do flow, deixa de ocupar espaço e fica noutra camada, de maneira a que o scroll não o mexe. Muito interessante para menus.
 - `Absolute`: fica noutra camada, deixa de ocupar espaço e fica posicionado em relação ao parente mais próximo ou a outro float que esteja do lado.
-- `Float`: remove o elemento do flow do documento e deixa-o para a direita ou para a esquerda em relação ao partente mais próximo. Interessante para textos / imagens e o texto à volta da imagem.
+- `Float`: remove o elemento do flow do documento e deixa-o para a direita ou para a esquerda em relação ao partente mais próximo. Interessante para textos / imagens e o texto à volta da imagem. A opção "clear" garante que nenhum elemento seguinte ocupe a outra parte da linha.
