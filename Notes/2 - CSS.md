@@ -467,3 +467,5 @@ Podem existir diversos CSS indicados no HTML (1) ou só um ficheiro CSS em que e
 ### Validação
 Há sites que permitem validar e ver os erros contidos no código CSS. Por exemplo [este](http://jigsaw.w3.org/css-validator/).
 
+### Bibliography:
+[CSS Slides](https://web.fe.up.pt/~arestivo/slides/?s=css3#1), André Restivo
