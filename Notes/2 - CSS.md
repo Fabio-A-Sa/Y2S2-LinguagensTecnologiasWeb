@@ -444,11 +444,12 @@ body header {
 
 Podem existir diversos CSS indicados no HTML (1) ou só um ficheiro CSS em que existem separações de acordo com os diversos tamanhos de display. <br>
 
-1. 
+1. Media = "{all -> tudo, print -> impressoras, screen -> ecrans de computadores, speech -> sintetizadores de fala}". Orientation = "{portrait, landscape}"
 
 ```html
 <link rel="stylesheet"
-      media="(min-width: 600px) and (max-width: 800px)"
+      media="(min-width: 600px) and (max-width: 800px)" 
+      media="(min-width: 800px) and screen, print" <!-- Outra forma, com operadores lógicos -->
       href="medium.css" 
 />
 ```
