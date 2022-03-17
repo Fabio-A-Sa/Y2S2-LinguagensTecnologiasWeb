@@ -26,6 +26,10 @@ p {                     /* seletor */
     - Pseudo-classes
     - Pseudo-elements
     - Principais erros na seleção
+3. Cores
+4. Fontes
+5. Texto
+6. Unidades de comprimento
 
 ### Linking to HTML
 
