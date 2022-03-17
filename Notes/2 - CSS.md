@@ -2,10 +2,10 @@
 
 Cascading Style Sheet é a linguagem usada para formatar o estilo da página HTML. O CSS 1 foi criado em 1996 e atualmente está em vigor a versão 3, datada de 2011-2012. É baseada em dois conceitos: 
 
-1. Seletores
+1. Seletores <br>
 Permitem selecionar elementos do HTML para aplicar estilos
 
-2. Propriedades
+2. Propriedades <br>
 Definem o estilo de cada elemento
 
 ```css
@@ -45,6 +45,8 @@ p {                     /* seletor */
     - Como criar sites responsivos
     - HTML e CSS
 14. Validação
+
+<br>
 
 ### Linking to HTML
 
