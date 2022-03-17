@@ -404,4 +404,32 @@ Definição de áreas de forma mais visual. De forma mais exaustiva ver [aqui](h
 
 ## Cascading
 
-Os filhos têm tendência a herdar as propriedades do pai, como por exemplo a cor. A tag `a` tem default azul, pois são links. No entanto dá para trocar, tendo regras mais específicas para cada uma. Ver [aqui](https://web.fe.up.pt/~arestivo/slides/?s=css3#163) a regra das especificações.
+Os filhos têm tendência a herdar as propriedades do pai, como por exemplo a cor. A tag `a` tem default azul, pois são links. No entanto dá para trocar, tendo regras mais específicas para cada uma. Ver [aqui](https://web.fe.up.pt/~arestivo/slides/?s=css3#163) a regra das especificações. <br>
+Ordem de importância das espedicificações:
+
+1. Origin (author, user, default).
+2. Specificity (bigger is better).
+3. Position (last is better).
+
+## Variáveis
+
+Para não ter de trocar o conteúdo de cada cor em todo o site. Assim define-se no início, por exemplo no body, uma variável e é isso que se utiliza no código.
+
+```css
+body {
+  --main-bg-color: blue;
+  --default-margin: 1em;
+}
+
+body header {
+  margin: var(--default-margin);
+}
+```
+
+## Sites responsivos e adaptativos
+
+#### A maior parte dos sites tratam-se de uma mistura destas duas técnicas:
+
+- `Responsivos`: Múltiplos layouts fluídos, o próprio CSS trata de fazer essa transição.
+- `Adaptativos`: Vários CSS, um para cada ocasião. Múltiplos layouts fixos.
+
