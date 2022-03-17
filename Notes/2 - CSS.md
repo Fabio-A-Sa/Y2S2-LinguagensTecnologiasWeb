@@ -433,3 +433,12 @@ body header {
 - `Responsivos`: Múltiplos layouts fluídos, o próprio CSS trata de fazer essa transição.
 - `Adaptativos`: Vários CSS, um para cada ocasião. Múltiplos layouts fixos.
 
+### Como criar sites responsivos:
+
+```html
+<!-- Indicação expressa no meta do head em html -->
+<meta name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+>
+```
+
