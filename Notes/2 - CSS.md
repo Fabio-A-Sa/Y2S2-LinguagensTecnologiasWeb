@@ -404,3 +404,4 @@ Definição de áreas de forma mais visual. De forma mais exaustiva ver [aqui](h
 
 ## Cascading
 
+Os filhos têm tendência a herdar as propriedades do pai, como por exemplo a cor. A tag `a` tem default azul, pois são links. No entanto dá para trocar, tendo regras mais específicas para cada uma. Ver [aqui](https://web.fe.up.pt/~arestivo/slides/?s=css3#163) a regra das especificações.
