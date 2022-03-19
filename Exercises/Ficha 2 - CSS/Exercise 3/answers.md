@@ -46,7 +46,7 @@
 
 ## 3.5 - Final Color
 
-first link: magenta
-second link: red
-third link: yellow
-fourth link: yellow
+1. first link: magenta
+2. second link: red
+3. third link: yellow
+4. fourth link: yellow
