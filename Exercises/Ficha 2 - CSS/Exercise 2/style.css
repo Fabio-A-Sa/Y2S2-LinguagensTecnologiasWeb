@@ -1,0 +1,9 @@
+body > aside {
+    float: right;
+    width: 20em;
+    height: 44.26em;
+}
+
+#s1, #s2 {
+    width: 36em;
+}
