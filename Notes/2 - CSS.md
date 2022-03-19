@@ -445,6 +445,12 @@ Ordem de importância das espedicificações:
 2. Specificity (bigger is better).
 3. Position (last is better).
 
+### Cálculo das especificações (a, b, c):
+
+- [x] `a` -> número de ids
+- [x] `b` -> número de classes, pseudo classes e atributos
+- [x] `c` -> número de elementos e pseudo elementos
+
 ## Variáveis
 
 Para não ter de trocar o conteúdo de cada cor em todo o site. Assim define-se no início, por exemplo no body, uma variável e é isso que se utiliza no código.
