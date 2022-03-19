@@ -9,7 +9,7 @@ body {
     display: none;
 }
 
-header a, #menu a {
+header a, #menu a, #related a {
     text-decoration: none;
 }
 
@@ -27,14 +27,6 @@ header h1, header h2 {
 
 header.signup {
     font-family: Poppins;
-}
-
-p:hover {
-    color: white;
-}
-
-section:hover {
-    background-color: #2A2F33;
 }
 
 #menu {
@@ -59,3 +51,22 @@ section:hover {
 #menu ul li:nth-child(4) { border-top: 0.5em solid #FF8932; }
 #menu ul li:nth-child(5) { border-top: 0.5em solid #19B6E9; }
 #menu ul li:nth-child(6) { border-top: 0.5em solid #E84C8B; }
+
+#menu ul li:nth-child(n):hover { background-color: #848d91; }
+
+
+#related {
+    margin: 1em 0em 1em;
+    padding: 1em;
+    background-color: #323232;
+}
+
+#related h1 {
+    font-weight: bold;
+}
+
+#related a, #related p {
+    color: white;
+    text: white;
+    font-family: Poppins;
+}
