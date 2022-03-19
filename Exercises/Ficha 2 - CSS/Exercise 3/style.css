@@ -1,0 +1,6 @@
+section ul li               { color : green }    /*R1*/
+.bar .second                { color : red }      /*R2*/
+li a                        { color : cyan }     /*R3*/
+section li:first-child ~ li { color : yellow }   /*R4*/
+#foo .bar li :first-child   { color : inherit }  /*R5*/
+.bar li                     { color : magenta }  /*R6*/
