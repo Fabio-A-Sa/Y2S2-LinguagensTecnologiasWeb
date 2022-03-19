@@ -11,7 +11,12 @@
 
 ## 3.2 - Rules
 
-
+1. section with id foo: R1, R2, R3, R4, R5, R6
+2. ul with class bar: R2, R3, R4, R5, R6
+3. first list item: R1, R3, R5, R6
+4. second list item: R2, R3, R4, R6
+5. third list item: R3, R4, R6
+6. fourth list item: R3, R4, R6
 
 ## 3.3 - Selected Rule
 
