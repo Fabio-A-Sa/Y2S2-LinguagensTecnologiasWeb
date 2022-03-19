@@ -1,3 +1,4 @@
+/* Exercício 1
 body > aside {
     float: right;
     width: 20em;
@@ -6,4 +7,26 @@ body > aside {
 
 #s1, #s2 {
     width: 36em;
+}
+*/
+
+/* Exercício 2 */
+
+body > aside {
+    float: right;
+    width: 20em;
+    height: 44.26em;
+}
+
+body > section > article {
+    height: 30em;
+}
+
+#s1, #s2 {
+    width: 36em;
+}
+
+#s1 > article, #s2 > article {
+    float: right;
+    width: 8em;
 }
