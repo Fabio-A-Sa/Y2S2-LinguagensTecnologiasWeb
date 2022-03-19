@@ -18,7 +18,7 @@ header a { color: white; }
 
 header {
     background-color: #046DD5;
-    padding: 1rem;
+    padding: 1em;
 }
 
 header h1, header h2 {
@@ -44,9 +44,12 @@ section:hover {
 #menu ul { 
     list-style-type:none;
     font-family: Poppins;
+    text-align: center;
 }
 
-#menu ul li {
-    border-color: red green blue;
-    border-bottom: 0.5em solid red;
-}
+#menu ul li:nth-child(1) { border-top: 0.5em solid #E1493E; }
+#menu ul li:nth-child(2) { border-top: 0.5em solid #8ABA56; }
+#menu ul li:nth-child(3) { border-top: 0.5em solid #5B4282; }
+#menu ul li:nth-child(4) { border-top: 0.5em solid #FF8932; }
+#menu ul li:nth-child(5) { border-top: 0.5em solid #19B6E9; }
+#menu ul li:nth-child(6) { border-top: 0.5em solid #E84C8B; }
