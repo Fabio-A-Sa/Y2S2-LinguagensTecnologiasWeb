@@ -33,17 +33,16 @@
 
 ## 3.4 - Color value
 
-section with id foo:
-ul with class bar:
-first list item:
-second list item:
-third list item:
-fourth list item:
-first link:
-second link:
-third link:
-fourth link:
-
+1. section with id foo: green
+2. ul with class bar: green
+3. first list item: green
+4. second list item: yellow
+5. third list item: yellow
+6. fourth list item: yellow
+7. first link: cyan
+8. second link: cyan
+9. third link: cyan
+10. fourth link: cyan
 
 ## 3.5 - Final Color
 
