@@ -14,7 +14,7 @@ header a, #menu a {
 }
 
 header a { color: white; }
-#menu a { color: black; }
+#menu a { color: black; align-content: center; }
 
 header {
     background-color: #046DD5;
@@ -34,7 +34,7 @@ p:hover {
 }
 
 section:hover {
-    background-color: #2A2F33 
+    background-color: #2A2F33;
 }
 
 #menu {
@@ -45,9 +45,13 @@ section:hover {
     list-style-type: none;
     font-family: Poppins;
     text-align: center;
+    padding-inline-start: 0px;
 }
 
-#menu ul li { padding: 1em; }
+#menu ul li {
+    padding: 1em;
+    padding-inline-start: 0px;
+}
 
 #menu ul li:nth-child(1) { border-top: 0.5em solid #E1493E; }
 #menu ul li:nth-child(2) { border-top: 0.5em solid #8ABA56; }
