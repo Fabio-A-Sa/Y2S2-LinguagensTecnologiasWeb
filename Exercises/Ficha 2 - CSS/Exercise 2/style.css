@@ -32,7 +32,7 @@ body > aside {
 
 */
 
-/* Exercício 3 */
+/* Exercício 3
 
 body > aside {
     position: absolute;
@@ -46,4 +46,35 @@ main {
     position: absolute;
     top: 13.2em;
     width: 60em;
+}
+
+*/
+
+/* Exercício 4 */
+
+aside, footer {
+    position: absolute;
+}
+
+main {
+    width: 40em;
+}
+
+aside {
+    right: 15em;
+    top: 8em;
+    height: 7em;
+    width: 18em;
+}
+
+footer {
+    right: 15em;
+    top: 17em;
+    height: 3.5em;
+    width: 18em;
+}
+
+#s1, #s2 {
+    float: left;
+    width: 18em;
 }
