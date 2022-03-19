@@ -13,15 +13,15 @@ header a, #menu a, #related a {
     text-decoration: none;
 }
 
-header a { color: white; }
+body > header a { color: white; }
 #menu a { color: black; align-content: center; }
 
-header:first-of-type {
+body > header:first-of-type {
     background-color: #046DD5;
     padding: 1em 1.5em 2.3em;
 }
 
-body header h1, body header h2 {
+body > header h1, body > header h2 {
     font-family: Lora;
 }
 
@@ -84,4 +84,6 @@ header.signup {
 body > footer {
     background: #848d91;
     padding: 1em;
+    font-size: 20px;
+    color: white;
 }
