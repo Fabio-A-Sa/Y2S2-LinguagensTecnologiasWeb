@@ -16,12 +16,12 @@ header a, #menu a, #related a {
 header a { color: white; }
 #menu a { color: black; align-content: center; }
 
-header {
+header:first-of-type {
     background-color: #046DD5;
     padding: 1em 1.5em 2.3em;
 }
 
-header h1, header h2 {
+body header h1, body header h2 {
     font-family: Lora;
 }
 
@@ -54,19 +54,34 @@ header.signup {
 
 #menu ul li:nth-child(n):hover { background-color: #848d91; }
 
-
 #related {
     margin: 1em 0em 1em;
     padding: 1em;
     background-color: #323232;
 }
 
-#related h1 {
-    font-weight: bold;
-}
-
 #related a, #related p {
     color: white;
     text: white;
     font-family: Poppins;
+}
+
+#news article p {
+    padding: 0em 1em 0.5em;
+}
+
+#news article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
+#news article footer, #news article footer a {
+    padding: 1em;
+    background: #E1493E;
+    color: white;
+    margin: 0.5em 0em;
+}
+
+body > footer {
+    background: #848d91;
+    padding: 1em;
 }
