@@ -20,10 +20,29 @@
 
 ## 3.3 - Selected Rule
 
-
+1. section with id foo: R1
+2. ul with class bar: R2
+3. first list item: R5
+4. second list item: R4
+5. third list item: R4
+6. fourth list item: R4
+7. first link: R6
+8. second link: R6
+9. third link: R6
+10. fourth link: R6
 
 ## 3.4 - Color value
 
+section with id foo:
+ul with class bar:
+first list item:
+second list item:
+third list item:
+fourth list item:
+first link:
+second link:
+third link:
+fourth link:
 
 
 ## 3.5 - Final Color
