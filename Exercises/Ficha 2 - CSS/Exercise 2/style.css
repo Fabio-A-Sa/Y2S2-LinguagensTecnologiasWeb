@@ -34,3 +34,16 @@ body > aside {
 
 /* Exercício 3 */
 
+body > aside {
+    position: absolute;
+    right: 14.52em;
+    top: 0;
+    height: 6.05em;
+    width: 18em;
+}
+
+main {
+    position: absolute;
+    top: 13.2em;
+    width: 60em;
+}
