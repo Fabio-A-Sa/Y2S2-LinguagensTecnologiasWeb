@@ -9,4 +9,17 @@
 - R5 (1, 2, 1)
 - R6 (0, 1, 1)
 
-##
+## 3.2 - Rules
+
+
+
+## 3.3 - Selected Rule
+
+
+
+## 3.4 - Color value
+
+
+
+## 3.5 - Final Color
+
