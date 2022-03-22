@@ -9,16 +9,16 @@ body {
     display: none;
 }
 
-#signup > a:first-child::after {
-    content: "  |  "
-}
-
 header a, #menu a, #related a {
     text-decoration: none;
 }
 
 body > header a { color: white; }
 #menu a { color: black; align-content: center; }
+
+#signup > a:first-child::after{
+    content: " |";
+}
 
 body > header:first-of-type {
     background-color: #046DD5;
@@ -42,6 +42,8 @@ header.signup {
     font-family: Poppins;
     text-align: center;
     padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 #menu ul li {
@@ -62,11 +64,11 @@ header.signup {
     margin: 1em 0em 1em;
     padding: 1em;
     background-color: #323232;
+    margin-block-start: 0px;
 }
 
 #related a, #related p {
     color: white;
-    text: white;
     font-family: Poppins;
 }
 
@@ -89,18 +91,19 @@ article {
     position: relative;
 }
 
-article > header {
+article > header > h1 {
+    width: 30%;
     position: absolute;
+    padding: 0em 1em;
+    font-size: 3em;
 }
 
 #news > article > header > h1 > a {
     color: white;
-    padding: 0em 1.5em;
-    font-size: 2em;
 }
 
-#news > article > img {
-
+article > img{
+    width: 100%;
 }
 
 body > footer {
