@@ -9,6 +9,10 @@ body {
     display: none;
 }
 
+#signup > a:first-child::after {
+    content: "  |  "
+}
+
 header a, #menu a, #related a {
     text-decoration: none;
 }
