@@ -89,12 +89,12 @@ if ($everything == "ok") exit(0);
 Dois iguais para comparar o conteúdo, três iguais para comparar o conteúdo e o tipo. A segunda forma é mais segura.
 
 ```php
-if (1 == true) // true
-if (1 === true) // false
-if (null == false) // true
-if (null === false) // true
-if ("Car" == true) // true
-if ("Car" === true) // false
+if (1 == true)          // true
+if (1 === true)         // false
+if (null == false)      // true
+if (null === false)     // true
+if ("Car" == true)      // true
+if ("Car" === true)     // false
 ```
 
 ### Strings
@@ -103,8 +103,18 @@ if ("Car" === true) // false
 
 ```php
 $name = "Fabio";
-echo 'This car belong to $name'; // This car belongs to $name
-echo "This car belong to $name"; // This car belongs to John
-echo 'Hello World!' . " This is $name."; // contatenação
+echo 'This car belong to $name';            // This car belongs to $name
+echo "This car belong to $name";            // This car belongs to John
+echo 'Hello World!' . " This is $name.";    // contatenação
+echo strlen($name);                         // 5
+echo substr($name, 1, 3);                   // abi -> começa em #1 e tem comprimento 3
+
+/* Outras funções interessantes */
+array explode (string $demimiter, string $str);
+string implode (string $glue, array $pieces);
 ```
+
+### Arrays
+
+Funcionam como maps / dicionários nas outras linguagens. Para cada chave há um valor.
 
