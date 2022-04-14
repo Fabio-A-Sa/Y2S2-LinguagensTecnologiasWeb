@@ -273,9 +273,9 @@ $dbh = new PDO('sqlite:database.db');
 
 Para prevenir SQL Injection, usar sempre `prepare()` seguido de `execute()`. Para `fetch()` é conveniente usar o mode `FETCH_ASSOC`:
 
-- PDO::FETCH_ASSOC: returns an array indexed by column name.
-- PDO::FETCH_NUM: returns an array indexed by column number.
-- PDO::FETCH_BOTH (default): returns an array indexed by both column name and 0-indexed column number.
+- `PDO::FETCH_ASSOC`: returns an array indexed by column name.
+- `PDO::FETCH_NUM`: returns an array indexed by column number.
+- `PDO::FETCH_BOTH` (default): returns an array indexed by both column name and 0-indexed column number.
 
 ```php
 $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // change database mode
@@ -308,4 +308,53 @@ try {
   echo $e->getMessage();
 }
 ```
+
+## HTTP Parameters
+
+Nos formulários, se usarmos o método `GET` os parâmetros lançados vão em cima do html para a página seguinte, ao contrário do `POST`. Este último é o ideal para passar parâmetros a ser usados em bases de dados:
+
+```
+http://www.example.com:80/path?key1=value1&key2=value2#fragment_id
+```
+
+Depois, os parâmetros são recebidos num array `$_GET` ou `$_POST` mediante a escolha.
+
+## Sessions
+
+Se a pessoa aceitar a `Cookie`, então a cada novo request ao servidor é enviada a cookie. Forma de fazer store de dados no browser, poupando recursos. Assim evita de fazer login sempre que quer aceder a uma nova página.
+
+```php
+/* Deve ser inicializada antes de qualquer input ou output */
+bool setcookie (string $name, string $value, int $expire = 0, 
+                string $path, string $domain, bool $secure = false,
+                bool $httponly = false)
+```
+
+- Se uma sessionID for recebida no servidor, normalmente através de cookie, então retira o estado através do id;
+- Se nada for recebido, retorna uma nova sessionID através de cookie;
+- Ambas usam o array global `$_SESSION`;
+- Lifetime em segundos. Se colocado 0 significa "até ao browser fechar";
+
+```php
+session_start();
+var_dump($_SESSION);               // inspect session variables
+$_SESSION['username'] = $username; // modify session variables
+session_set_cookie_params (int $lifetime, string $path, string $domain, bool $secure = false, bool $httponly = false)
+session_destroy();                 // call after start()
+```
+
+## Passwords
+
+Para uma melhor segurança, são guardadas sempre unsando uma hashfunction:
+
+```php
+echo md5('apple');  
+// 1f3870be274f6c49b3e31a0c6728957f
+echo sha1('apple');
+// d0be2dc421be4fcd0172e5afceea3970e2f3d940
+echo hash('sha256', 'apple');
+// 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b
+```
+
+## Includes
 
