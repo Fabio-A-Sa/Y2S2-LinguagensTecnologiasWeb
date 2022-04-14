@@ -65,3 +65,22 @@ Iguais às das outras linguagens:
 - continue;
 - break;
 - switch case;
+
+### Die and Exit
+
+#### Die
+
+Pode receber uma string de erro, que será mostrada antes de acabar completamente com o erro.
+
+```php
+ if ($something == "wrong") die ("Something is Wrong");
+```
+
+#### Exit
+
+Recebe um inteiro, que retorna no final como símbolo do status. Parecido com a linguagem C++.
+
+```php
+if ($everything == "ok") exit(0);
+```
+
