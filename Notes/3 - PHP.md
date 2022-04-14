@@ -53,7 +53,7 @@ $bar = $bar ?? $some_default_value; // usando o operador para verificar a aceita
 
 Usando a função `var_dump()` ou simplesmente `print_r()` consegue-se obter a estrutura interna de qualquer variável
 
-### Estruturas de controlo:
+## Estruturas de controlo:
 
 Iguais às das outras linguagens:
 
@@ -66,7 +66,7 @@ Iguais às das outras linguagens:
 - break;
 - switch case;
 
-### Die and Exit
+## Die and Exit
 
 #### Die
 
@@ -97,7 +97,7 @@ if ("Car" == true)      // true
 if ("Car" === true)     // false
 ```
 
-### Strings
+## Strings
 
 É diferente usar plicas e aspas. A concatenação é feita com um ponto.
 
@@ -114,7 +114,7 @@ array explode (string $demimiter, string $str);
 string implode (string $glue, array $pieces);
 ```
 
-### Arrays
+## Arrays
 
 Funcionam como maps / dicionários nas outras linguagens. Para cada chave há um valor.
 
@@ -149,7 +149,7 @@ $values = array('John', 45, 'Bicycle');
 list($name, $age, $vehicle) = $values;                  // retira os elementos para variáveis
 ``` 
 
-### Funções
+## Funções
 
 Uma função simples, tal como as outras linguagens. Pode conter void, default values, returns de vários tipos (incluindo array), 
 
@@ -207,4 +207,6 @@ function add(?int $a, ?int $b) : ?int {
   return $a + $b;
 }
 ```
+
+## Classes
 
