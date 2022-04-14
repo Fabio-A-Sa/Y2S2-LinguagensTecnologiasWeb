@@ -186,4 +186,25 @@ bar(); // prints 10
 
 #### Coercive Typing
 
-Podemos obrigar
+Podemos obrigar a função a aceitar determinados tipos de parâmetro, caso contrário é para usar conversões. Se declararmos `declare(strict_types=1);` então qualquer valor que não seja lançado com o tipo adequado gera um erro. <br>
+Uma variável também pode ser nula quando declarada com o tipo e um `?` antes.
+
+```php
+/* Recebe inteiros e retorna um inteiro */
+function add(int $a, int $b) : int {
+  return $a + $b;
+}
+
+echo add(1, 4);          // 5 
+echo add(1.2, 3.6);      // 4 -> só admite a parte inteira, ou seja, math.floor()
+echo add("1.2", "3.6");  // 4 
+
+declare(strict_types=1); // modo restrito, a declarar no início de cada ficheiro PHP
+
+/* Recebe inteiros ou nulos e retorna um inteiro ou nulo */
+function add(?int $a, ?int $b) : ?int {
+  if ($a === null || $b === null) return null;
+  return $a + $b;
+}
+```
+
