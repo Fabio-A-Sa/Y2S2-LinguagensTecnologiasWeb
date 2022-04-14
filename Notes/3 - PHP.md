@@ -118,3 +118,72 @@ string implode (string $glue, array $pieces);
 
 Funcionam como maps / dicionários nas outras linguagens. Para cada chave há um valor.
 
+```php
+// inicialização
+$values = array(); 
+$values = array(1, 2, 3, 'John'); 
+$values = array('name' => 'John', 'age' => 45, 3 => 'Car');
+$values[] = "Boat"; // -> 4 => Boat
+$values[0] = 5;  // although they don't need to be defined
+$values[1] = 10; // and they don't have a fixed size
+$values[2] = 20;
+
+// count returns the size of the array
+for ($i = 0; $i < count($values); $i++)
+  $sum = $sum + $values[$i];
+echo $sum / count($values); // calculates average: 11.666666666667
+
+// foreach
+$values = array('name'=>'John', 'age'=>45, 2=>'Car', 'Bicycle');
+foreach ($values as $key => $value)
+  echo "$key = $value\n";
+
+// important functions
+bool in_array (mixed $needle, array $haystack);         // retorna true se o elemento estiver lá dentro, else false
+mixed array_search (mixed $needle, array $haystack);    // retorna a chave do elemento, se estiver lá dentro, else false
+bool array_key_exists (mixed $key, array $array);       // retorna se a chave existe dentro do array, else false
+bool asort(array &$array);                              // ordena o array por valor / index
+bool ksort(array &$array);                              // ordena o array por chave
+bool shuffle(array &$array);                            // random ordenação
+$values = array('John', 45, 'Bicycle');
+list($name, $age, $vehicle) = $values;                  // retira os elementos para variáveis
+``` 
+
+### Funções
+
+Uma função simples, tal como as outras linguagens. Pode conter void, default values, returns de vários tipos (incluindo array), 
+
+```php
+function doSomething() {
+    echo "done";
+}
+
+function sum($a, &$b) {
+  return $a++ + $b++;
+}
+
+function sum($a, $b = 0, $c = 0) {
+  echo $a + $b + $c;
+}
+```
+
+#### Global variables:
+
+O PHP só sabe que estamos a mexer com variáveis globais se as declararmos como tal. Caso contrário poderá dar warning.
+
+```php
+function foo() {
+  echo $baz;
+}
+function bar() {
+  global $baz;
+  echo $baz;
+}
+$baz = 10;
+foo(); // prints nothing, may result in a warning
+bar(); // prints 10
+```
+
+#### Coercive Typing
+
+Podemos obrigar
