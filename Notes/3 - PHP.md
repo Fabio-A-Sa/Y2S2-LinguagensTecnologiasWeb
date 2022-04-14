@@ -211,10 +211,15 @@ function add(?int $a, ?int $b) : ?int {
 ## Classes
 
 Surgiram no PHP 5. Funcionam como as linguagens Python e C++ por exemplo. <br>
-Atributos e métodos podem ser públicos, privados e protected.
+Atributos e métodos podem ser públicos, privados e protected. Também há possibilidade de fazer `extend` e `static`. Há também interfaces, que apenas declaram os métodos a serem implementados nas futuras classes. <br>
+Se uma classe é `final`, então não pode ser extendida. Se um método é `final`, então não pode ser *override* por uma classe filha.
 
 ```php
-class Car {
+interface Race {
+    public function racing() : string;
+}
+
+class Car implements Race {
 
     /* Atributos */
     private $plate;
@@ -226,8 +231,12 @@ class Car {
         $this->plate = $plate;
     }
 
-    public function getDriver() : string {
+    public final function getDriver() : string {
         return $this->driver; // return $driver would have returned null
+    }
+
+    public function racing() : string {
+        return "vrummmm";
     }
 }
 
@@ -235,3 +244,58 @@ class Car {
 $car = new Car('John Doe', '12-34-AB');
 ```
 
+## Excepções
+
+```php
+if ($db == null)
+    throw new Exception('Database not initialized');
+```
+
+#### Try and catch
+
+```php
+try {
+  $car = getCar($id);
+} catch (DatabaseException $e) {
+  echo 'Database error: ' . $e->getMessage();
+} catch (Exception $e) {
+  echo 'Unknown error: ' . $e->getMessage();
+}
+```
+
+## Databases
+
+É fácil de ligar o PHP a uma base de dados em sqlite3:
+
+```php
+$dbh = new PDO('sqlite:database.db');
+```
+
+Para prevenir SQL Injection, usar sempre `prepare()` seguido de `execute()`. Para `fetch()` é conveniente usar o mode `FETCH_ASSOC`:
+
+- PDO::FETCH_ASSOC: returns an array indexed by column name.
+- PDO::FETCH_NUM: returns an array indexed by column number.
+- PDO::FETCH_BOTH (default): returns an array indexed by both column name and 0-indexed column number.
+
+```php
+$dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); // change database mode
+$stmt = $dbh->prepare('SELECT * FROM person WHERE name = ?');
+$stmt->execute(array($name));
+
+$result = $stmt->fetchAll();
+foreach ($result as $row) {
+  echo $row['address'];
+}
+```
+
+#### Error handling
+
+- `PDO::ERRMODE_SILENT` The default mode. No error is shown. You can use the errorCode() and errorInfo() on both database and statement objects to inspect the error.
+
+- `PDO::ERRMODE_WARNING` Similar to previous one but a warning is shown.
+
+- `PDO::ERRMODE_EXCEPTION` In addition to setting the error code, PDO will throw a PDOException and set its properties to reflect the error code and error information.
+
+```php
+
+```
