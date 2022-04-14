@@ -84,3 +84,27 @@ Recebe um inteiro, que retorna no final como símbolo do status. Parecido com a 
 if ($everything == "ok") exit(0);
 ```
 
+### Comparações
+
+Dois iguais para comparar o conteúdo, três iguais para comparar o conteúdo e o tipo. A segunda forma é mais segura.
+
+```php
+if (1 == true) // true
+if (1 === true) // false
+if (null == false) // true
+if (null === false) // true
+if ("Car" == true) // true
+if ("Car" === true) // false
+```
+
+### Strings
+
+É diferente usar plicas e aspas. A concatenação é feita com um ponto.
+
+```php
+$name = "Fabio";
+echo 'This car belong to $name'; // This car belongs to $name
+echo "This car belong to $name"; // This car belongs to John
+echo 'Hello World!' . " This is $name."; // contatenação
+```
+
