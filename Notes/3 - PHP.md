@@ -290,12 +290,22 @@ foreach ($result as $row) {
 
 #### Error handling
 
-- `PDO::ERRMODE_SILENT` The default mode. No error is shown. You can use the errorCode() and errorInfo() on both database and statement objects to inspect the error.
+- `PDO::ERRMODE_SILENT` The default mode. No error is shown;
 
-- `PDO::ERRMODE_WARNING` Similar to previous one but a warning is shown.
+- `PDO::ERRMODE_WARNING` Similar to previous one but a warning is shown;
 
-- `PDO::ERRMODE_EXCEPTION` In addition to setting the error code, PDO will throw a PDOException and set its properties to reflect the error code and error information.
+- `PDO::ERRMODE_EXCEPTION` In addition to setting the error code, PDO will throw a PDOException and set its properties to reflect the error code and error information;
 
 ```php
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+try {
+  $stmt = $dbh->prepare("SELECT * FROM person WHERE name = ?");
+  $stmt->execute(array($name));
+  $result = $stmt->fetchAll()
+} catch (PDOException $e) {
+  // Do something about it...
+  echo $e->getMessage();
+}
 ```
+
