@@ -140,7 +140,7 @@ foreach ($values as $key => $value)
 
 // important functions
 bool in_array (mixed $needle, array $haystack);         // retorna true se o elemento estiver lá dentro, else false
-mixed array_search (mixed $needle, array $haystack);    // retorna a chave do elemento, se estiver lá dentro, else false
+mixed array_search (mixed $needle, array $haystack);    // retorna a chave do elemento se estiver lá dentro
 bool array_key_exists (mixed $key, array $array);       // retorna se a chave existe dentro do array, else false
 bool asort(array &$array);                              // ordena o array por valor / index
 bool ksort(array &$array);                              // ordena o array por chave
