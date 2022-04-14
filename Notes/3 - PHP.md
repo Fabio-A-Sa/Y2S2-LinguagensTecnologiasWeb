@@ -210,3 +210,28 @@ function add(?int $a, ?int $b) : ?int {
 
 ## Classes
 
+Surgiram no PHP 5. Funcionam como as linguagens Python e C++ por exemplo. <br>
+Atributos e métodos podem ser públicos, privados e protected.
+
+```php
+class Car {
+
+    /* Atributos */
+    private $plate;
+    private $driver;
+
+    /* Construtor e métodos */
+    public function __construct($driver, $plate) {
+        $this->driver = $driver;
+        $this->plate = $plate;
+    }
+
+    public function getDriver() : string {
+        return $this->driver; // return $driver would have returned null
+    }
+}
+
+/* Declaração */
+$car = new Car('John Doe', '12-34-AB');
+```
+
