@@ -348,13 +348,63 @@ session_destroy();                 // call after start()
 Para uma melhor segurança, são guardadas sempre unsando uma hashfunction:
 
 ```php
-echo md5('apple');  
-// 1f3870be274f6c49b3e31a0c6728957f
-echo sha1('apple');
-// d0be2dc421be4fcd0172e5afceea3970e2f3d940
-echo hash('sha256', 'apple');
-// 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b
+echo md5('apple');              // 1f3870be274f6c49b3e31a0c6728957f
+echo sha1('apple');             // d0be2dc421be4fcd0172e5afceea3970e2f3d940
+echo hash('sha256', 'apple');   // 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b
 ```
 
 ## Includes
 
+Os includes são efetuados sempre de acordo com a localização do ficheiro em que o site está atualmente
+
+```php
+include_once('other_file.php'); // irá incluir o ficheiro uma vez
+require_once('other_file.php'); // o mesmo, só que dá erro caso algo aconteça de grave
+__FILE__ // The full path and filename of the current file.
+__DIR__  // The folder of the current file.
+dirname(__FILE__) // same as __DIR__
+dirname(__DIR__)  // returns the parent folder of the current file
+```
+
+## Boas práticas
+
+#### Validar inputs:
+
+```php
+if (!isset($_GET['username'] || $_GET['username'] === '' || length($_GET['username'] > 20))
+    // Do something about it
+```
+
+#### Validar retorno das bases de dados e de POST/GET:
+
+```php
+<?php
+  $stmt = $dbh->prepare('SELECT * FROM car WHERE make = ?');
+  $stmt->execute(array($make));
+  $cars = $stmt->fetchAll();
+?>
+<body>
+    <? foreach ($cars as $car) { ?>
+    <ul>
+    <li><strong>Model:</strong> <?=$car['model']?></li>
+    <li><strong>Price:</strong> <?=$car['price']?></li>
+    </ul>
+    <? } ?>
+</body>
+```
+
+#### DRY: Don't Repete Yourself
+
+```php
+function getAllCars($dbh) { // inside database/cars.php
+  $stmt = $dbh->prepare('SELECT * FROM car WHERE make = ?');
+  $stmt->execute(array($make));
+  $cars = $stmt->fetchAll();
+}
+include ('database/init.php');
+include ('database/cars.php');
+$cars = getCars($dbh);
+```
+
+### Bibliography:
+[PHP Slides](https://web.fe.up.pt/~arestivo/slides/?s=php#1), André Restivo
