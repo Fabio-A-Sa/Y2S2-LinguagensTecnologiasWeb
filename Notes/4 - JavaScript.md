@@ -101,3 +101,66 @@ const bar = foo || some_default_value
 const bar = foo ?? some_default_value
 ```
 
+## Control Structures
+
+```js
+
+// IF
+if (condition) {
+  //do domething
+} else {
+  //something else
+}
+
+// SWITCH CASE
+switch (expression) {
+   case label_1:
+      statements_1
+      break
+   case label_2:
+      statements_2
+      break
+   //...
+   default:
+      statements_def
+      break
+}
+
+// FOR
+for (let i = 0; i <= 10; i++) {
+  console.log(i)
+} // 0 1 2 3 4 5 6 7 8 9 10
+
+// DO WHILE
+let i = 0
+do {
+   console.log(i)
+   i++
+} while (i <= 10) // 0 1 2 3 4 5 6 7 8 9 10
+
+// WHILE
+let i = 0
+while (i <= 10) {
+   console.log(i)
+   i++
+} // 0 1 2 3 4 5 6 7 8 9 10
+
+// TERNARY
+const best = value > best ? value : best
+
+// BREAK and CONTINUE
+for (let i = 0; i < 10; i++) {
+  if (i == 8) break
+  if (i % 2 == 0) continue
+  console.log(i)
+} // 1 3 5 7
+```
+
+## Functions
+
+```js
+function add(num1, num2) {
+  return num1 + num2
+}
+console.log(add(1, 2)) // 3
+```
