@@ -158,9 +158,34 @@ for (let i = 0; i < 10; i++) {
 
 ## Functions
 
+Funcionam tal e qual as outras linguagens. Podem ter default values. Aqui as funções podem também ser variáveis e tratadas como tal.
+
 ```js
-function add(num1, num2) {
+function add(num1, num2 = 0) {
   return num1 + num2
 }
-console.log(add(1, 2)) // 3
+
+const add = (num1, num2) => num1 + num2 // arrow functions
+
+console.log(add(1, 2))      // 3
+console.log(add(2))         // 2
+
+// funções podem ser variáveis
+function foo(i) {
+  console.log('bar = ' + i)
+}
+function executeNTimes(f, n) { // Executes function f, n times
+  for (let i = 0; i < n; i++)
+    f(i)
+}
+executeNTimes(foo, 3)   // bar = 1 bar = 2 bar = 3
+executeNTimes(foo(), 3) // this is a common mistake
+```
+
+## Arrays
+
+Em Javascript, um array é um objecto, pelo que é comparado por referência.
+
+```js
+
 ```
