@@ -174,12 +174,12 @@ console.log(add(2))         // 2
 function foo(i) {
   console.log('bar = ' + i)
 }
-function executeNTimes(f, n) { // Executes function f, n times
+function executeNTimes(f, n) {      // Executes function f, n times
   for (let i = 0; i < n; i++)
     f(i)
 }
-executeNTimes(foo, 3)   // bar = 1 bar = 2 bar = 3
-executeNTimes(foo(), 3) // this is a common mistake
+executeNTimes(foo, 3)               // bar = 1 bar = 2 bar = 3
+executeNTimes(foo(), 3)             // this is a common mistake
 ```
 
 ## Arrays
@@ -187,5 +187,10 @@ executeNTimes(foo(), 3) // this is a common mistake
 Em Javascript, um array é um objecto, pelo que é comparado por referência.
 
 ```js
-
+let years = [1990, 1991, 1992, 1993]
+console.log(years[0])               // 1990
+years.info = "Nice array" // Arrays are objects
+console.log(years.info)   // Nice array
+for (const year of years) // a simple method to inspect all data
+  console.log(year)
 ```
