@@ -188,9 +188,21 @@ Em Javascript, um array é um objecto, pelo que é comparado por referência.
 
 ```js
 let years = [1990, 1991, 1992, 1993]
-console.log(years[0])               // 1990
-years.info = "Nice array" // Arrays are objects
-console.log(years.info)   // Nice array
-for (const year of years) // a simple method to inspect all data
+console.log(years[0])                   // 1990
+years.info = "Nice array"               // Arrays are objects
+console.log(years.info)                 // Nice array
+for (const year of years)               // a simple method to inspect all data
   console.log(year)
+
+/* Alguns métodos importantes */
+console.log(years.length)               // 5
+let sum = 0
+years.forEach(e => sum += e)
+console.log(sum)                        // 9960
+
+years.reverse()
+console.log(years)                      // [1994, 1993, 1992, 1991, 1990]
+
+years.every(e => e >= 1990)             // true
+years.some(e => e % 2 == 0)             // true
 ```
