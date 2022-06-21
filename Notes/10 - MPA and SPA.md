@@ -16,3 +16,8 @@ Com SPA ou MPA o back button funciona para todas as situações e ao mesmo tempo
 
 - CSR: Client Side Rendering, o browser recebe dados de diferentes formas (XML, JSON) e transforma em HTML;
 - SSR: Server Side Rendering, o browser recebe já HTML dado pelo servidor;
+
+## PWA
+
+Progressive Web Pages. Aplicações web que possuem recursos nativos mas com muito alcance. São instaláveis, tem armazenamento local (cache), usam APIs das Web e funcionam em vários dispositivos (responsivo). Não degradam a experiência do utilizador ao serem usadas em navegadores mais antigos.
+
