@@ -1,0 +1,47 @@
+#orders h2 {
+    text-align: center;
+}
+
+#orders img {
+    grid-area: image;
+    width: 350px;
+}
+
+#orders .newOrder {
+    border-radius: 0.5em;
+    background-color: var(--main-color);
+    padding: 1em;
+    margin: 1em;
+}
+
+#orders .newOrder #info{
+    background-color: var(--main-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:    "image name"
+                            "image category"
+                            "image type"
+                            "image price"
+                            "image quantity"
+                            "image client";
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+#orders .newOrder #info > h3:first {grid-area: name;}
+#orders .newOrder #info:nth-child(2) {grid-area: category;}
+#orders .newOrder #info:nth-child(3) {grid-area: type;}
+#orders .newOrder #info:nth-child(4) {grid-area: price;}
+#orders .newOrder #info:nth-child(5) {grid-area: quantity;}
+#orders .newOrder #info:nth-child(6) {grid-area: client;}
+
+.newOrder .changeStatus {
+    margin-left: 11em;
+}
+
+.newOrder .changeStatus input {
+    background-color: var(--secondary-color);
+    border-radius: 0.5em;
+    border: solid rgb(56, 55, 55);
+}

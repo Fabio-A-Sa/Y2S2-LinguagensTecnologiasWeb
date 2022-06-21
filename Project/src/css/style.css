@@ -1,0 +1,143 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+/* Messages */
+
+#messages {
+    align-self: center;
+    text-align: center;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+#messages article {
+    border-radius: 2em;
+    line-height: 2em;
+    margin: 0.3em;
+}
+
+#messages > .error {
+    background-color: rgb(223, 183, 183);
+}
+
+#messages > .success {
+    background-color: rgb(142, 246, 130);
+}
+
+#messages > .warning {
+    color:rgb(116, 92, 12)
+}
+
+.error {
+    color: brown;
+}
+
+.success {
+    color: rgb(35, 106, 23)
+}
+
+.warning {
+    background-color: rgb(235, 209, 115);
+}
+
+/* Denied Access */
+
+#accessDenied {
+    line-height: 6em;
+    text-align: center;
+    padding: 6em;
+}
+
+#accessDenied a {
+    color: rgb(24, 24, 100);
+    text-decoration: underline;
+}
+
+#accessDenied img {
+    width: 15em;
+}
+
+/* Variables */
+
+body {
+    --main-color: rgb(207, 203, 198);
+    --secondary-color: rgb(221, 220, 220);
+    --background-color: rgb(243, 239, 239);
+    --item-color: rgb(195, 191, 188);
+    --main-font: Lora;
+    --secondary-font: Poppins;
+    --font-size: 1em;
+}
+
+/* Default links */
+
+body{
+    font-size: var(--font-size);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+img:hover {
+    opacity: 50%;
+}
+
+#login {
+    font-size: 0.75em;
+}
+
+#banner {
+    font-family: var(--secondary-font);
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0.2em 0.2em 0.2em black;
+}
+
+.restaurant{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurant a{
+    color:white;
+    text-shadow: 0.2em 0.2em 0.2em black;
+    font-size: 1.5em;
+}
+
+main > h2 {
+    font-size: 3em;
+}
+
+#popular .item{
+    background-color: var(--main-color);
+    border: 1px solid var(--secondary-color);
+}
+
+#popular .item cite h4 {
+    font-family: var(--secondary-font);
+}
+
+footer nav {
+    background-color: var(--secondary-color);
+}
+
+body footer {
+    background-color: var(--main-color);
+}
+
+.restaurantItem{
+    background-color: var(--item-color);
+}
+
+.newOrder{
+    background-color: var(--item-color);
+}

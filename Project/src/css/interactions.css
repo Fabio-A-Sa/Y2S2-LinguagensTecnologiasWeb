@@ -1,0 +1,8 @@
+#topbar .item:hover {
+    background-color: grey;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(198, 198, 136);
+}

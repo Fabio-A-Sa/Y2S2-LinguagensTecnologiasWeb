@@ -1,0 +1,204 @@
+/* Restaurant Info */
+
+#info, #reviews {
+    text-align: center;
+    padding: 2em;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:    "infoRT infoRT" 
+                            "infoR infoRA"
+                            "infoR infoRC"
+                            "infoR infoRO";
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+#infoRT {grid-area: infoRT; font-size: xx-large;}
+#infoR {grid-area: infoR; text-align: justify; margin-left: 0.5em; width: 80%;}
+#infoRA {grid-area: infoRA; text-align: justify; margin-left: 0.5em; height: 0.5em;}
+#infoRC {grid-area: infoRC; text-align: justify; margin-left: 0.5em; height: 0.5em;}
+#infoRO {grid-area: infoRO; text-align: justify; margin-left: 0.5em; height: 0.5em;}
+
+#info button {
+    width: 18em;
+    margin-left: 10em;
+}
+/* Restaurant Dishes */
+
+#searchingDishes {
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--main-color);
+}
+
+#dishResults .dish > * {
+    margin-left: 0.5em;
+}
+
+#dishResults .dish {
+    border-radius: 2em;
+    background-color: var(--main-color);
+    margin: 1em 0em 1em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:    "image name"
+                            "image price"
+                            "image addCar"
+                            "image addFav";
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#dishResults .dish > img {
+    grid-area: image;
+    width: 150px;
+    height: 150px;
+    border-radius: 2em;
+}
+
+ .dish > h3:first   { grid-area: name; margin-left: 0.5em;}
+ .dish:nth-child(2) { grid-area: price; margin-left: 0.5em;}
+ .dish:nth-child(3) { grid-area: addCar; margin-left: 0.5em;}
+ .dish:nth-child(4) { grid-area: addFav; margin-left: 0.5em;}
+
+/* Searching restaurants */
+
+#searching {
+    background-color: var(--main-color);
+    padding: 0.5em;
+    border-radius: 20px;
+    margin: 2em;
+}
+
+#searching * {
+    text-align: center;
+    size: 2em;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#searchrestaurants {
+    display: flex;
+    flex-direction: column;
+    max-height: 15em;
+    overflow-y: auto;
+}
+
+#searchrestaurants > article {
+    color: white; text-align: center;
+    margin: 0.5em; padding: 0.5em;
+    background-color: #cba979;
+    align-items: center;
+    vertical-align: middle;
+    width:90%;
+}
+
+#searchrestaurants > article > img {
+    width: 50px;
+}
+
+#searchrestaurants > article > * {
+    font-size: 1em;
+}
+
+/* Restaurant Reviews */
+
+#reviews img, #newReview img {
+    width: 150px;
+}
+
+#reviews .item, #newReview .item {
+    border-radius: 0.5em;
+    border-style: dotted;
+    background-color: var(--main-color);
+    padding: 1em;
+    margin: 1em;
+}
+
+#reviews .item .review {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:    "reviewI reviewN reviewS"
+                            "reviewI reviewD reviewD"
+                            "reviewC reviewC reviewC";
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#newReview .item .review {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:    "reviewI reviewN reviewS"
+                            "reviewI reviewD reviewD"
+                            "reviewC reviewC reviewC"
+                            "uploadImg uploadImg uploadImg";
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#reviewI {grid-area: reviewI;}
+#reviewN {grid-area: reviewN; text-align: justify; margin-left: 0.5em;}
+#reviewS {grid-area: reviewS; text-align: right;}
+#reviewD {grid-area: reviewD; text-align: justify; margin-left: 0.5em;}
+#reviewC {grid-area: reviewC; text-align: center;}
+#uploadImg {grid-area: uploadImg; margin-left: 2em;}
+
+#reviews .item .answer {
+    border-radius: 0.5em;
+    border-style: dotted;
+    background-color: var(--secondary-color);
+    margin: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:    "answerO"
+                            "answerC";
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+}
+#reviews .answer h4:first {grid-area: "answerO"; text-align: justify; margin-left: 0.5em;}
+#reviews .answer h4:nth-child(2) {grid-area: "answerC"; text-align: center;}
+
+#review #answer {   /*botão da resposta*/
+    border: solid rgb(56, 55, 55);
+    display: block;
+    background-color: var(--main-color);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: auto;
+}
+
+/*Create a Review*/
+
+#newReview #review, #stars {
+    display: block;
+    border-radius: 0.5em;
+    background-color: var(--main-color);
+    margin: auto;
+}
+
+#newReview #stars {
+    margin-top: 0.1em;
+    border-radius: 0.5em;
+    box-sizing: 5em;
+}
+
+#newReview #sendReview {
+    border: solid rgb(63, 61, 61);
+    display: block;
+    background-color: var(--secondary-color);
+    border-radius: 0.5em;
+    padding: 0.4em;
+    margin: auto;
+}

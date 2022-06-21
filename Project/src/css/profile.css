@@ -1,0 +1,144 @@
+main {
+    background-color: var(--secondary-color);
+    margin: 0em;
+}
+
+img:hover {
+    opacity: 50%;
+}
+
+/* User information */
+
+#user {
+    text-align: center;
+    padding: 2em;
+}
+
+#user > img {
+    padding: 2em 0em 0em;
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+#user > h1 {
+    font-size: 2em;
+}
+
+#user > h3 {
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+#user h2 {
+    margin: 0em 35%;
+    padding: 0.5em;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+#user h2:hover {
+    background-color: rgb(198, 198, 136);
+}
+
+/* My favorite dishes */
+/*
+#dishes {
+    align-content: center;
+}
+
+#dishes .dish {
+    border-radius: 2em;
+    background-color: var(--main-color);
+    margin: 0em 0em 1em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "image restaurant"
+                         "image type"
+                         "image category"
+                         "image remove";
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#dishes .dish > * {
+    margin: 0px;
+}
+
+#dishes .dish > img {
+    grid-area: image;
+    width: 200px;
+    height: 200px;
+    border-radius: 2em;
+}
+
+#dishes .dish > h2 {
+    grid-area: restaurant;
+}
+
+#dishes .dish > h3:first {
+    grid-area: type;
+}
+
+#dishes .dish > h3:nth-child(2) {
+    grid-area: category;
+}
+
+#dishes .dish > a > h3:nth-child(3) {
+    grid-area: remove;
+}
+*/
+/* My favorite restaurants */
+
+#favRestaurants {
+    align-content: center;
+}
+
+#favRestaurants .favRestaurant {
+    border-radius: 2em;
+    background-color: var(--main-color);
+    margin: 0em 0em 1em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "favimage favrestaurant"
+                         "favimage favremove";
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#favRestaurants .favRestaurant > * {
+    margin: 0px;
+}
+
+#favRestaurants .favRestaurant > a > img {
+    grid-area: favimage;
+    width: 200px;
+    height: auto;
+    border-radius: 2em;
+}
+
+#favRestaurants .favRestaurant > h1 {
+    grid-area: favrestaurant;
+}
+
+#favRestaurants .favRestaurant :nth-child(3) {
+    grid-area: favremove;
+}
+
+/* My restaurants */
+
+#myRestaurants {
+    padding: 1em;
+}
+
+#myRestaurants .myRestaurant {
+    text-align: center;
+}
+
+#myRestaurants .myRestaurant img {
+    border-radius: 30px;
+}

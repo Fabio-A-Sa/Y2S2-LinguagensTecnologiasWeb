@@ -1,0 +1,39 @@
+/*
+body main{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: solid rgb(221, 220, 220);
+    background-color: rgb(221, 220, 220);
+    box-sizing: content-box;
+}
+
+body main h1{
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+}
+
+#loginpage form {
+    padding-top: 1em;
+    margin-left: 28em;
+    padding-bottom: 1em;
+}
+
+#loginpage #button {
+    margin-left: 6em;
+    padding: 0.2em;
+}
+
+#loginpage input {
+    border: solid black;
+    border-radius: 3px;
+    background-color: rgb(221, 220, 220);
+    opacity: 60%;
+
+}
+body main form input:hover{
+    opacity: 60%;
+}
+*/

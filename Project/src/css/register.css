@@ -1,0 +1,35 @@
+body main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: solid rgb(221, 220, 220);
+    background-color: rgb(221, 220, 220);;
+    box-sizing: content-box;
+}
+
+body main h1{
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+}
+
+body main form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+body main form #button {
+    padding: 0.2em;
+}
+
+body main form input {
+    border: solid black;
+    border-radius: 3px;
+    background-color: rgb(221, 220, 220);
+    opacity: 60%;
+}
+
+body main form input:hover{
+    opacity: 60%;
+}

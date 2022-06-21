@@ -1,0 +1,420 @@
+/* Variables */
+
+html {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------*/
+
+header img {
+    width: 4em;
+}
+
+
+#logo{
+    align-self: center;
+}
+
+header{
+    display: flex;
+}
+
+
+#topbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+#topbar .item {
+    flex-grow : 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#topbar .item img {
+    width: 50px;
+}
+
+#topbar .item h3 {
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+}
+
+#login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2em;
+}
+
+#login h3{
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+    margin: 0;
+}
+
+#login h3:first-of-type{
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+
+#login > a{
+    grid-column-start: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+#restaurants > h2, #popular h2{
+    grid-column: 1/5;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#registerRestaurant form{
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label{
+    margin-bottom: 0.5em;
+}
+
+
+#banner {
+    background-size: cover;
+    margin-bottom: 1em;
+    padding: 7.5em 0 7.5em;
+    text-align: center;
+}
+
+
+#banner > h1 {
+    margin: 0;
+    font-size: 6em;
+    color:white;
+}
+
+#banner > h2 {
+    margin: 0;
+    font-size: 3em;
+    color:white;
+}
+
+
+#restaurants {
+    align-self: center;
+    display: grid;
+    grid-gap:1em;
+    grid-template-columns: 0.25fr 2fr 1fr 0.25fr;
+    align-items: center;
+}
+
+.restaurant {
+    aspect-ratio: 7 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 1em;
+}
+
+.restaurant a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-right: 1em;
+}
+
+.restaurant:first-of-type {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+}
+
+.restaurant:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.restaurant:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+main > h2 {
+    text-align: center;
+}
+
+#popular{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0 1em;
+}
+
+#popular .item {
+    border-radius: 2em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "image restaurant"
+                         "image comment"
+                         "image stars"
+                         "image author";
+    justify-content: space-evenly;
+    width: 95%;
+    align-self: center;
+}
+
+#popular .item a {
+    grid-area: image;
+}
+
+#popular .item img {
+    width:15em;
+    height: 100%;
+    aspect-ratio: 1;
+    grid-area: image;
+    border-radius: 2em;
+}
+
+#popular .item header h3 {
+    font-size: 2em;
+    grid-area: restaurant;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+#popular .item cite h4 {
+    font-family: var(--secondary-font);
+    font-size: 1em;
+    grid-area: comment;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+#popular .item span{
+    margin-left: 1em;
+    font-size: 1.5em;
+    grid-area: stars;
+}
+
+#popular .item footer h4 {
+    font-family: var(--secondary-font);
+    font-size: 1em;
+    grid-area: autor;
+    margin: 0 0 0 5em;
+}
+
+#popular .item footer {
+    width: 80%;
+}
+
+#popular > h3 {
+    text-align: center;
+    border: 1px solid black;
+    margin: 1em 20em 0em;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/* Contacts */
+
+footer nav {
+    padding: 0em 2em;
+    display: grid;
+    grid-template-columns: 5fr 4fr 4fr 1fr 1fr 1fr;
+    grid-template-rows: 4em;
+    align-items: center;
+}
+
+footer nav a img {
+    width: 2em;
+    height: 2em;
+}
+
+/* Footer */
+
+body footer {
+    padding: 1em;
+    text-align: center;
+}
+
+#allOrders{
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+button{
+    background-color: var(--main-color);
+    border-color: transparent;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+#myRestaurants, #favoriteRestaurant{
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 2em 1fr;
+    margin-bottom: 1em;
+    padding: 1em;
+    grid-auto-flow: column;
+    grid-auto-columns: 13%;
+    align-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+#more h2{
+    width: 100%;
+    grid-column: 1 / 4;
+}
+
+.restaurantItem{
+    grid-row: 2;
+    display: grid;
+    grid-template-areas: "name"
+                         "img"
+                         "button";
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.restaurantItem h1{
+    margin: 1em 0 1em 0;
+}
+
+.restaurantItem img{
+    aspect-ratio: 1;
+    width: 94%;
+    height:94%;
+    object-fit:cover;
+    grid-area: img;
+    display: block;
+    margin: auto;
+}
+
+.restaurantItem h1{
+    grid-area: name;
+}
+
+#favoriteDish{
+    margin: 0 1em 0 1em;
+}
+
+#favoriteDish article{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "image name button"
+                         "image text1 button"
+                         "image text2 button";
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+#favoriteDish article *{
+    align-self: center;
+}
+
+#favoriteDish article img{
+    grid-area: image;
+    aspect-ratio: 1;
+    height: 10em;
+    border-radius: 1em;
+}
+
+#favoriteDish article h2{
+    grid-area: name;
+    margin: 0 0 0 0.5em;
+}
+
+#favoriteDish article h3{
+    margin: 0 0 0 1.5em;
+}
+
+#favoriteDish article h3:nth-of-type(1){
+    grid-area: text1;
+}
+
+#favoriteDish article h3:nth-of-type(2){
+    grid-area: text2;
+}
+
+#favoriteDish article button{
+    grid-row: 2;
+    margin-right: 2em;
+}
+
+#newOrders, #oldOrders, #dishes{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: auto;
+}
+
+.order, .dish {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto;
+    border-radius: 2em;
+    grid-template-areas: "image name button"
+                         "image text1 button"
+                         "image text2 button"
+                         "image text3 button";
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+.order img, .dish img{
+    grid-area: image;
+    aspect-ratio: 1;
+    height: 10em;
+    border-radius: 1em;
+}
+
+.order h3, .dish h3{
+    margin: 0 0 0 1.5em;
+    align-self: center;
+}
+
+.order button, .dish a{
+    grid-column: 3;
+    grid-row: 2/3;
+    margin-right: 2em;
+}
+
+.dish h2{
+    margin:0;
+}
+
+.order h3:nth-of-type(1), .dish h2{
+    margin-left: 0.5em;
+    grid-area: name;
+}
+
+.order h3:nth-of-type(2), .dish h3:nth-of-type(1){
+    grid-area: text1;
+}
+
+.order h3:nth-of-type(3), .dish h3:nth-of-type(2){
+    grid-area: text2;
+}
+
+.order h3:nth-of-type(4), .dish h3:nth-of-type(3){
+    grid-area: text3;
+}
+
+#editDish a{
+    text-align: center;
+}
