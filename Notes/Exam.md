@@ -105,3 +105,5 @@
 
 ## 9 - MPA e SPA
 
+- As single page application têm vantagens sob as multiple page applications;
+- O HTML pode ser renderizado do lado do utilizador (CSR) ou do lado do servidor (SSR);
