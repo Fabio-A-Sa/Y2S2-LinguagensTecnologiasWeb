@@ -21,3 +21,8 @@ Com SPA ou MPA o back button funciona para todas as situações e ao mesmo tempo
 
 Progressive Web Pages. Aplicações web que possuem recursos nativos mas com muito alcance. São instaláveis, tem armazenamento local (cache), usam APIs das Web e funcionam em vários dispositivos (responsivo). Não degradam a experiência do utilizador ao serem usadas em navegadores mais antigos.
 
+## Outras notas:
+
+- Os Web Workers conseguem fazer um script rodar noutra thread em background;
+- Os Service Workers atuam como proxy e fazem management de ficheiros em cache;
+- Tudo é mais simples com Frameworks (Laravel, Django, Meteor...);
