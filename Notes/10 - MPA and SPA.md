@@ -9,3 +9,10 @@ Com AJAX os problemas são parcialmente atenuados (tal como fizemos no projecto)
 ## SPA
 
 Single Page Application vem revolucionar a Web clássica e o já conhecido MPA. Numa primeira interação há carregamento do HTML (mais lento do que em MPA, devido aos scripts) que irá perdurar até ao final do ciclo de utilização da aplicação. Todas as outras interações ficam a cargo do AJAX para mais rapidamente ser percebida pelo utilizador, sem qualquer reload. Os utilizadores não necessitam de esperar pelo término da interação para fazer a seguinte.
+
+Com SPA ou MPA o back button funciona para todas as situações e ao mesmo tempo copiar e enviar o URL acaba por salvar o estado atual da navegação pelo site/aplicação. É mais cómodo a todos os níveis para os utilizadores. No entanto uns carregam só partes do HTML e outro todo o conteúdo.
+
+## Renderização de HTML
+
+- CSR: Client Side Rendering, o browser recebe dados de diferentes formas (XML, JSON) e transforma em HTML;
+- SSR: Server Side Rendering, o browser recebe já HTML dado pelo servidor;
