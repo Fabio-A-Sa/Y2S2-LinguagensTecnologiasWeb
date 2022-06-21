@@ -8,4 +8,4 @@ Com AJAX os problemas são parcialmente atenuados (tal como fizemos no projecto)
 
 ## SPA
 
-Single Page Application vem revolucionar a Web clássica e o já conhecido MPA. 
+Single Page Application vem revolucionar a Web clássica e o já conhecido MPA. Numa primeira interação há carregamento do HTML (mais lento do que em MPA, devido aos scripts) que irá perdurar até ao final do ciclo de utilização da aplicação. Todas as outras interações ficam a cargo do AJAX para mais rapidamente ser percebida pelo utilizador, sem qualquer reload. Os utilizadores não necessitam de esperar pelo término da interação para fazer a seguinte.
