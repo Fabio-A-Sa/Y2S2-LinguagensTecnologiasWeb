@@ -27,6 +27,11 @@
 - As fontes serifadas são melhores para a leitura de textos, as sans-serife para impressão ou títulos;
 - É aconselhado usar tamanhos `rem` (em relação ao root, html, que normalmente tem 16px) ou `em` (em relação ao pai) para as escalas de texto e de blocos;
 - Devido ao margin collapse, a distância entre dois elementos é sempre igual ao `max(e1.margin, e2.margin)` e não à sua soma;
+- O display dos elementos podem ser block (provocam sempre uma nova linha), inline (colocados na mesma linha desde que caibam, margin/padding só empurra os outros elementos lateralmente), inline-block (colocados na mesma linha, mas o padding/margin de cima e de baixo passam a ocupar também espaço) e none (deixa de ocupar espaço, desaparece);
+- A position pode ser static (o default), relative (parecido com o default mas há translação em relação à posição original), fixed (deixa de estar no flow, não ocupa espaço nele e segue o scroll da página, está posicionada de acordo com a janela do browser) e absolute (como o fixed, mas não segue o scroll, fica posicionada de acordo com o primeiro parent não estático, o body por default);
+- O float remove o elemento do flow e coloca-o em left ou right. É interessante para textos;
+- Flexbox coloca os blocos inline. Se os tamanhos forem calculados de acordo com o parent, então o site fica responsivo;
+- Grid coloca os blocos em qualquer posição dentro da grelha escolhida;
 
 ## 3 - PHP
 
