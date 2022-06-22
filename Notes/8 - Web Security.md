@@ -72,3 +72,7 @@ if ($_SESSION['csrf'] !== $_POST['csrf']) {
 
 ### Man-in-the-middle Attack
 
+Quando a comunicação entre dois sistemas (client-server por exemplo) é interceptada. A solução é usar uma criptografia assimétrica (a chave que descodifica não é a mesma que assina), tal como RSA. Non entanto isto não é o suficiente e é necessário recorrer a CA (certificate authority) para garantir a autenticidade das mensagens enviadas.
+
+### Credential Storage
+
