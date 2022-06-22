@@ -34,6 +34,12 @@ São identificados por URI (Uniform Resource Identifier), para usar código prov
 
 Permite selecionar partes, dados ou elementos do XML. Olha para o documento como uma árvore de elementos, com atributos e parents. É mais completo do que os selectores de CSS.
 
+```XPath
+child::para[position()=1]
+child::book[attribute::lang='en']
+book[count(descendant::author) > 1]
+```
+
 Em XPath, existem dois nós principais: documento e root do documento. A partir do root do documento é que começam a aparecer os outros elementos.
 
 ### Location path
@@ -42,15 +48,12 @@ Em XPath, existem dois nós principais: documento e root do documento. A partir 
 
 #### Eixo 
 
-Em que direção vamos fazer uma pesquisa, em relação ao nó de contexto (o ponto de partida). Pode ser self (seleciona o nó do contexto), descendents, child, parent, ancestor, precending sibling, preceding, following. Apanham tanto elementos como atributos, incluíndo do próprio. 
+Em que direção vamos fazer uma pesquisa, em relação ao nó de contexto (o ponto de partida). Pode ser self (seleciona o nó do contexto), descendents, child, parent, ancestor, precending sibling, preceding, following. Apanham tanto elementos como atributos, incluíndo do próprio. Por omissão, o eixo de pesquisa é o filho (child::).
 
 #### Node Test
 
+Pode ser o nome de um elemento, do atributo ou do namespace, mas só busca de acordo com o eixo (do nó principal de pesquisa).
 
+#### Predicados
 
-- Zero ou mais predicados;
-
-```XPath
-child::para[position()=1]
-```
-
+Maneira de filtrar os nós escolhidos através do eixo e do node test, usando a sintax [attribute::name="value"]
