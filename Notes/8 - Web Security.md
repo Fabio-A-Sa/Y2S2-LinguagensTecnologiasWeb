@@ -76,3 +76,19 @@ Quando a comunicação entre dois sistemas (client-server por exemplo) é interc
 
 ### Credential Storage
 
+As Passwords devem ser passadas ao servidor por POST, para não aparecerem no URL da request, e devem ser colocadas na base de dados já cifradas com a técnica de salt. Garante-se que duas palavras-passe iguais não vão ter o mesmo hash (as lookup tables já não funcionam).
+
+```php
+  $options = ['cost' => 12];
+  $stmt = $db->prepare('INSERT INTO users VALUES (?, ?)');
+  $stmt->execute(array(
+    $username,
+    password_hash($password, PASSWORD_DEFAULT, $options))
+  );
+  $stmt = $db->prepare('SELECT * FROM users WHERE username = ?');
+  $stmt->execute(array($username));
+  $user = $stmt->fetch();
+  if ($user && password_verify($password, $user['password'])) {
+    $_SESSION['username'] = $username;
+  }
+```
