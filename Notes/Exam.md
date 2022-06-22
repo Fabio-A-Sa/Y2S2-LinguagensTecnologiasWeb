@@ -34,6 +34,9 @@
 - Grid coloca os blocos em qualquer posição dentro da grelha escolhida, com colunas e linhas de tamanhos distintos;
 - Por default, as propriedades de cada elemento são inherit. 
 - As especificidades são do tipo (a, b, c) com a = id, b = classes, pseudoclasses e atributos, c = elementos, pseudoelementos. A comparação deve ser feita por ordem e entre selectores que apontam para o mesmo elemento;
+- O site é responsivo quando tem layouts fluídos, é adaptativo quando tem layouts fixos para várias telas;
 
 ## 3 - PHP
 
+- Os escapes só funcionam com aspas;
+- 
