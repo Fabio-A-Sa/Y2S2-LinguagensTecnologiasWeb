@@ -26,7 +26,7 @@
 - Atenção: o código `:not(article) p` pode selecionar um parágrafo que é filho direto de um artigo. Basta que a árvore contenha algum elemento que não seja um artigo, como por exemplo section > article > p. Em `:not(article) > p` isso já não acontece;
 - As fontes serifadas são melhores para a leitura de textos, as sans-serife para impressão ou títulos;
 - É aconselhado usar tamanhos `rem` (em relação ao root, html, que normalmente tem 16px) ou `em` (em relação ao pai) para as escalas de texto e de blocos;
-- 
+- Devido ao margin collapse, a distância entre dois elementos é sempre igual ao `max(e1.margin, e2.margin)` e não à sua soma;
 
 ## 3 - PHP
 
