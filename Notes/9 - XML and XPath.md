@@ -38,10 +38,16 @@ Em XPath, existem dois nós principais: documento e root do documento. A partir 
 
 ### Location path
 
-É um cojunto de steps de pesquisa separados por uma barra. Se começar com uma barra '/', começa a pesquisar a partir do documento (nó anterior ao root do documento). Cada step tem:
+É um cojunto de steps de pesquisa separados por uma barra. Se começar com uma barra '/' (muda o contexto da pesquisa) começa a pesquisar a partir do documento (nó anterior ao root do documento). Cada step tem:
 
-- Um eixo;
-- Um node test;
+#### Eixo 
+
+Em que direção vamos fazer uma pesquisa, em relação ao nó de contexto (o ponto de partida). Pode ser self (seleciona o nó do contexto), descendents, child, parent, ancestor, precending sibling, preceding, following. Apanham tanto elementos como atributos, incluíndo do próprio. 
+
+#### Node Test
+
+
+
 - Zero ou mais predicados;
 
 ```XPath
