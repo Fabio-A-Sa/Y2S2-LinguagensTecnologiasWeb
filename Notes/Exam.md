@@ -30,8 +30,10 @@
 - O display dos elementos podem ser block (provocam sempre uma nova linha), inline (colocados na mesma linha desde que caibam, margin/padding só empurra os outros elementos lateralmente), inline-block (colocados na mesma linha, mas o padding/margin de cima e de baixo passam a ocupar também espaço) e none (deixa de ocupar espaço, desaparece);
 - A position pode ser static (o default), relative (parecido com o default mas há translação em relação à posição original), fixed (deixa de estar no flow, não ocupa espaço nele e segue o scroll da página, está posicionada de acordo com a janela do browser) e absolute (como o fixed, mas não segue o scroll, fica posicionada de acordo com o primeiro parent não estático, o body por default);
 - O float remove o elemento do flow e coloca-o em left ou right. É interessante para textos;
-- Flexbox coloca os blocos inline. Se os tamanhos forem calculados de acordo com o parent, então o site fica responsivo;
-- Grid coloca os blocos em qualquer posição dentro da grelha escolhida;
+- Flexbox (.container display:flex) coloca os blocos inline. Se os tamanhos forem calculados de acordo com o parent, então o site fica responsivo;
+- Grid coloca os blocos em qualquer posição dentro da grelha escolhida, com colunas e linhas de tamanhos distintos;
+- Por default, as propriedades de cada elemento são inherit. 
+- As especificidades são do tipo (a, b, c) com a = id, b = classes, pseudoclasses e atributos, c = elementos, pseudoelementos. A comparação deve ser feita por ordem e entre selectores que apontam para o mesmo elemento;
 
 ## 3 - PHP
 
