@@ -21,7 +21,10 @@
 
 - O código de CSS deve ser separado do HTML usando \<link rel="stylesheet" href="style.css">, apesar de poder ser inline em cada elemento ou com recurso a \<style> dentro do \<head> da página;
 - \* para tudo, \# para ids, . para classes, > para filhos diretos, + para o irmão seguinte, ~ para todos os outros irmãos seguintes;
-- Pseudo classes são para 
+- Pseudo classes são para elementos existentes, como links que já foram visitados. Usa-se :, como a:visited que seleciona todos os links visitados;
+- Pseudo elementos são para elementos lógicos, que não são referenciados no HTML. Por exemplo a primeira letra do texto de um parágrafo. Usa-se ::, como #text::first-letter, que seleciona a primeira letra do texto que tem id = text;
+- Atenção: o código `:not(article) p` pode selecionar um parágrafo que é filho direto de um artigo. Basta que a árvore contenha algum elemento que não seja um artigo, como por exemplo section > article > p. Em `:not(article) > p` isso já não acontece;
+
 
 ## 3 - PHP
 
