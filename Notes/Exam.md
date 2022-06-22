@@ -83,3 +83,6 @@
 
 ## 6 - HTTP
 
+- HTTPS é HTTP com uma camada de segurança TSL/SSL. Ambos são stateless e é necessário enviar cookies para "permanecer" na mesma sessão, ou seja, para o servidor reconhecer quem fez o pedido;
+- URI contém URN e URL. São todos identificadores de recursos;
+- REST é Representational State Transfer, baseia-se em recursos e não em ações.
