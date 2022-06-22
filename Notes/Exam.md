@@ -24,7 +24,9 @@
 - Pseudo classes são para elementos existentes, como links que já foram visitados. Usa-se :, como a:visited que seleciona todos os links visitados;
 - Pseudo elementos são para elementos lógicos, que não são referenciados no HTML. Por exemplo a primeira letra do texto de um parágrafo. Usa-se ::, como #text::first-letter, que seleciona a primeira letra do texto que tem id = text;
 - Atenção: o código `:not(article) p` pode selecionar um parágrafo que é filho direto de um artigo. Basta que a árvore contenha algum elemento que não seja um artigo, como por exemplo section > article > p. Em `:not(article) > p` isso já não acontece;
-
+- As fontes serifadas são melhores para a leitura de textos, as sans-serife para impressão ou títulos;
+- É aconselhado usar tamanhos `rem` (em relação ao root, html, que normalmente tem 16px) ou `em` (em relação ao pai) para as escalas de texto e de blocos;
+- 
 
 ## 3 - PHP
 
