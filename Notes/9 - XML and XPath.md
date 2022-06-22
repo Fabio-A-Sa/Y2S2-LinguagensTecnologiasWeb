@@ -23,9 +23,7 @@ Document Type Declaration, define os nomes, o típo de conteúdo dos elementos e
 
 Simples de entender, suporta namespaces e é suficientemente auto-descritiva. 
 
-```xml
-<input type="text" required="required"/>
-```
+## Namespaces
 
-
+São identificados por URI (Uniform Resource Identifier), para usar código proveniente de várias linguagens no mesmo documento (parecido com os namespaces do C++).
 
