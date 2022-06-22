@@ -12,4 +12,15 @@ Quando através do URL (ou de includes em PHP), consegue-se aceder a conteúdos 
 const URL = "http://www.foo.com/../../database.db'
 ```
 
-### 
+### SQL Injection
+
+Quando uma query fica mal preparada e há injeção nos argumentos de código parcial que cancela a ação da pesquisa inicialmente prevista e faz retornar dados sensíveis da base de dados. Como contornar o problema em PHP:
+
+```php
+$stmt = $dbh->prepare('SELECT * FROM items WHERE title = ?');
+$stmt->execute(array($title));
+$items = $stmt->fetchAll();
+```
+
+### Cross-Site Scripting (XSS)
+
