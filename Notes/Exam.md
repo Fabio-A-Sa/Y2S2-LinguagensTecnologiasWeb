@@ -19,8 +19,9 @@
 
 ## 2 - CSS
 
-- O código de CSS deve ser separado do HTML, apesar de poder ser inline em cada elemento ou com recurso a \<style> dentro do \<head> da página;
-- 
+- O código de CSS deve ser separado do HTML usando \<link rel="stylesheet" href="style.css">, apesar de poder ser inline em cada elemento ou com recurso a \<style> dentro do \<head> da página;
+- \* para tudo, \# para ids, . para classes, > para filhos diretos, + para o irmão seguinte, ~ para todos os outros irmãos seguintes;
+- Pseudo classes são para 
 
 ## 3 - PHP
 
