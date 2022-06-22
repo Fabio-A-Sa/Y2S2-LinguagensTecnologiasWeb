@@ -9,6 +9,7 @@
 5. Regular Expressions
 6. HTTP
 7. Web Security
+8. XML e XPath
 
 ## 1 - HTML
 
@@ -94,4 +95,6 @@
 - XSS pode ser impedido ao validar, filtrar e codificar para o HTML dados sensíveis / por input;
 - CSRF pode ser impedido ao enviar, junto de cada formulário, um token secreto válido apenas para cada sessão;
 - Para melhor guardar as palavras passe, usar a técnica de salt diferente para cada palavra passe (mesmo que sejam iguais);
+
+## 8 - XML e XPath
 
