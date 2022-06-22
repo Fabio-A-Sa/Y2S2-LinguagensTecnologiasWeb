@@ -24,3 +24,27 @@ $items = $stmt->fetchAll();
 
 ### Cross-Site Scripting (XSS)
 
+Quando scripts maliciosos são injectados. Podem ser persistentes, quando são storage na base de dados ou servidor, e reflected, quando não são permanentes, ou DOM Based, quando o script malicioso não deixa o browser (injectado pelo URL por exemplo).
+
+Para prevenir podemos validar cada input ou filtrar o mesmo antes de mostrar:
+
+```php
+// Validar
+if ( !preg_match ("/^[a-zA-Z\s]+$/", $_GET['name'])) {
+  // ERROR: Name can only contain letters and spaces
+}
+
+// Filtrar
+$name = preg_replace ("/[^a-zA-Z\s]/", '', $_GET['name']);
+
+// Encodificar antes de mostrar no HTML final
+<?=htmlentities($post['text'])?>     // encodes all characters
+<?=htmlspecialchars($post['text'])?> // encodes only special chars
+```
+
+Há que ter um especial cuidado nos códigos das cookies enviadas para o servidor. Para mitigar a situação:
+
+```php
+session_set_cookie_params(0, '/', 'www.fe.up.pt', true, true);
+```
+
