@@ -15,6 +15,14 @@ eXtensible Markup Language é uma linguagem markup, conjunto de palavras e símb
 
 Document Type Declaration, define os nomes, o típo de conteúdo dos elementos e atributos e a sequência dos elementos no documento. Ou seja, define a estrutura em árvore do documento. 
 
+### XSD
+
+É mais específica do que DTD, por exemplo só posso ter tags 'b' dentro de um 'a' se o 'a' estiver dentro de um 'c'. Tem documentação dentro do próprio documento, tem suporte a herança e suporte a namespaces. 
+
+### Relaxing NG
+
+Simples de entender, suporta namespaces e é suficientemente auto-descritiva. 
+
 ```xml
 <input type="text" required="required"/>
 ```
