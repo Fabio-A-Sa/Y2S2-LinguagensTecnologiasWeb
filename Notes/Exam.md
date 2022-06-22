@@ -39,4 +39,5 @@
 ## 3 - PHP
 
 - Os escapes só funcionam com aspas;
-- 
+- Para usar variáveis globais é necessário declará-las como tal. Senão vai criar uma nova instância dentro dessa função;
+- Apesar de PHP não ser fortemente tipada, pode-se usar o coercive typing para gerar warnings quando os tipos não são os correctos para as operações em funções ou classes;
