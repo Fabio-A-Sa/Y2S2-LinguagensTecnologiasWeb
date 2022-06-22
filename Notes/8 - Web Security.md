@@ -48,3 +48,5 @@ Há que ter um especial cuidado nos códigos das cookies enviadas para o servido
 session_set_cookie_params(0, '/', 'www.fe.up.pt', true, true);
 ```
 
+### Cross-site Request Forgery (CSRF)
+
