@@ -98,3 +98,7 @@
 
 ## 8 - XML e XPath
 
+- Cada pesquisa tem um eixo de pesquisa, um nó de contexto e predicados (opcionais);
+- Por default, o eixo de pesquisa é child(), ou seja, pesquisa os filhos do nó de contexto;
+- Se a pesquisa começar com uma barra, então pesquisa desde o document (e não do document root, que é o nó seguinte);
+
