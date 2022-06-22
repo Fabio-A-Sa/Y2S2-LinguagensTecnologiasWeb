@@ -8,6 +8,7 @@
 4. JavaScript e DOM
 5. Regular Expressions
 6. HTTP
+7. Web Security
 
 ## 1 - HTML
 
@@ -86,3 +87,11 @@
 - HTTPS é HTTP com uma camada de segurança TSL/SSL. Ambos são stateless e é necessário enviar cookies para "permanecer" na mesma sessão, ou seja, para o servidor reconhecer quem fez o pedido;
 - URI contém URN e URL. São todos identificadores de recursos;
 - REST é Representational State Transfer, baseia-se em recursos e não em ações.
+
+## 7 - Web Security
+
+- Existem diversos ataques: path transversal, sql injection, cross-site scripting (XSS), cross-site request forgery (CSRF), man-in-the-middle;
+- XSS pode ser impedido ao validar, filtrar e codificar para o HTML dados sensíveis / por input;
+- CSRF pode ser impedido ao enviar, junto de cada formulário, um token secreto válido apenas para cada sessão;
+- Para melhor guardar as palavras passe, usar a técnica de salt diferente para cada palavra passe (mesmo que sejam iguais);
+
