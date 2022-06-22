@@ -50,3 +50,25 @@ session_set_cookie_params(0, '/', 'www.fe.up.pt', true, true);
 
 ### Cross-site Request Forgery (CSRF)
 
+Consiste em usar a sessão (cookie) para efetuar pedidos ao servidor em nome de outra pessoa. Para mitigar a ação, é gerar um tocken novo por sessão e em ações sensíveis enviá-lo juntamente com os dados, de modo a verificar a ligação e se o tocken é o mesmo:
+
+```php
+session_start();
+if (!isset($_SESSION['csrf'])) {
+  $_SESSION['csrf'] = generate_random_token();
+}
+
+<form action="transfer.php">
+  //...
+  <input type="hidden" name="csrf" value="<?=$_SESSION['csrf'])?>">
+</form>
+
+session_start();
+\\...
+if ($_SESSION['csrf'] !== $_POST['csrf']) {
+  // ERROR: Request does not appear to be legitimate
+}
+```
+
+### Man-in-the-middle Attack
+
