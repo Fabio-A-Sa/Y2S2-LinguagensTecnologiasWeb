@@ -41,3 +41,7 @@
 - Os escapes só funcionam com aspas;
 - Para usar variáveis globais é necessário declará-las como tal. Senão vai criar uma nova instância dentro dessa função;
 - Apesar de PHP não ser fortemente tipada, pode-se usar o coercive typing para gerar warnings quando os tipos não são os correctos para as operações em funções ou classes;
+- Mesmo indicando o tipo, o compilador tenta transformar os dados para não dar erros. sum(int "1.2", int "3.6") dará 4 por exemplo. A menos que se use declare(strict_types = 1);
+- É obrigatório colocar private, public or protected na declaração dos atributos de uma classe;
+- É obrigatório colocar $this-> antes de cada atributo, caso contrário instancia outra variável e trabalha com null;
+- 
