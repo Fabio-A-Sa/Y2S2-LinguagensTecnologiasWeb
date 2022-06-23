@@ -48,4 +48,7 @@
 - PDO é PHP Data Objects e serve como uma interface que manipula de igual forma vários tipos de bases de dados. Coneção, prepare e execute(array()), com fetch(), uma linha, ou fetchAll(), todas as linhas;
 - Na base de dados é importante garantir o atributo PDO::FETCH_ASSOC e PDO::ERRMODE_WARNING para um melhor debug;
 - A sessão (session_start()) deve ser instanciada antes de qualquer operação, pois usa cookies;
+- header("Location: index.php") não redireciona a páginas, apenas adiciona informação ao header do HTTP (que será interpretada depois do die())
+- include e require (once ou não) são semelhantes, mas o último lança um erro se não encontrar o ficheiro;
+- os includes em PHP são feitos de acordo com o próprio ficheiro. É importante por isso garantir a mesma profundidade em relação ao root de todos os ficheiros;
 - 
