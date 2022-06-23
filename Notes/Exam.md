@@ -65,4 +65,7 @@
 - this refere-se sempre ao objecto a manipular, ou ao contexto numa função, arrow functions não têm um this;
 - const person = { name: 'John Doe' }; person.name = 'Jane Doe' é permitido. Constante é o objecto e não os atributos. Podemos adicionar mais atributos também, tanto em versão array como objecto;
 - Cada função em Javascript tem dentro um protótipo, sempre que é modificado (Person.prototype.age) os outros objectos recebem também o novo atributo. Não basta modificar um objecto, tem de ser o próprio protótipo que a criou;
+- Apply e Call para mudar o contexto de uma função, para que o this seja de outro objecto. O Apply pode ter uma lista de argumentos. O Bind() retorna uma função para que possa ser executada depois e não no momento, útil para addEventListener;
+- Atributos começados com _ são read-only, mesmo que person.age = 50 não altera o valor original do construtor. Atributos começados com # são privados e dão erro ou undefined;
+- For... in é para propriedades de objectos, For.. of é para iterar num array, por exemplo;
 - 
