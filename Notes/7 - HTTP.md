@@ -1,6 +1,6 @@
 # 7 - HTTP
 
-Hyper Text Transfer Protocol, que é uma camada de aplicação, um protocolo para transferência de documentos. É stateless, pois não existe histórico acerca dos últimos pedidos. Cada pedido é novo, pelo que é importante enviar no head a chave da sessão.
+Hyper Text Transfer Protocol, que é uma camada de aplicação, um protocolo para transferência de documentos. É stateless, pois não existe histórico acerca dos últimos pedidos. Cada pedido é novo, pelo que é importante enviar no head a chave da sessão. Todo o estado da sessão é mantido na parte do cliente.
 
 ## URI, URN, URL
 
@@ -25,8 +25,12 @@ São métodos seguros (também idempotentes), obrigatórios para servidores HTTP
 
 ### DELETE e PUT
 
-São métodos idempotentes. Um cria um recurso numa determinada URl, outro apaga o mesmo. Não acontece mais por serem chamados X vezes. Chamar uma vez e chamar muitas é a mesma coisa.
+São métodos idempotentes. Um cria um recurso numa determinada URL, outro apaga o mesmo. Não acontece mais por serem chamados X vezes. Chamar uma vez e chamar muitas é a mesma coisa. Tem side-efects no servidor.
 
 ### POST e outros
 
-Pedido para ser gerado um novo URL, que tem side-efects no servidor. 
+Pedido para ser gerado um novo URL. Também tem side-efects no servidor. 
+
+## REST
+
+Representational State Transfer é um estilo de arquitetura baseado em recursos e não em ações. Funciona com comunicações client-server. 
