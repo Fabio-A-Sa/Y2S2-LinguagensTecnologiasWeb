@@ -31,6 +31,7 @@
 
 ### HTML
 
-### PHP
+```html
+<input type="text" name="phoneNumber" pattern="\d{9}|\d{3}-\d{3}-\d{3}">
+```
 
-### JavaScript
