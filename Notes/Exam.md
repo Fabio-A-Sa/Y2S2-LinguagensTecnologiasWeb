@@ -72,4 +72,5 @@
 - Await só funciona dentro de funções async;
 - document.location é o próprio URL da página. O document é uma árvore de Nodes, dos quais surgem os HTMLElements;
 - async no head do HTML, colocar a tag script fechada e com async, para que o javascript corra enquanto a página é criada, ou defer para o javascript só correr quando o HTML esteja todo carregado;
-- 
+- Os eventos são apanhados de fora para dentro e atuam de dentro para fora. section > article > p iria originar 3 capturas e 3 bubbling;
+- Ajax para o javascript também mandar pedidos http para o servidor. 
