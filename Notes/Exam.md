@@ -5,6 +5,7 @@
 1. HTML
 2. CSS
 3. PHP
+4. JavaScript e DOM
 
 ## 1 - HTML
 
@@ -51,4 +52,6 @@
 - header("Location: index.php") não redireciona a páginas, apenas adiciona informação ao header do HTTP (que será interpretada depois do die())
 - include e require (once ou não) são semelhantes, mas o último lança um erro se não encontrar o ficheiro;
 - os includes em PHP são feitos de acordo com o próprio ficheiro. É importante por isso garantir a mesma profundidade em relação ao root de todos os ficheiros;
+
+## 4 - JavaScript e DOM
 
