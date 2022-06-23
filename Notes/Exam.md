@@ -44,4 +44,8 @@
 - Mesmo indicando o tipo, o compilador tenta transformar os dados para não dar erros. sum(int "1.2", int "3.6") dará 4 por exemplo. A menos que se use declare(strict_types = 1);
 - É obrigatório colocar private, public or protected na declaração dos atributos de uma classe;
 - É obrigatório colocar $this-> antes de cada atributo, caso contrário instancia outra variável e trabalha com null;
+- Static é usado para utilizar a variável estática (possivelmente modificada) da classe. Self é usada para utilizar a variável estática do parent;
+- PDO é PHP Data Objects e serve como uma interface que manipula de igual forma vários tipos de bases de dados. Coneção, prepare e execute(array()), com fetch(), uma linha, ou fetchAll(), todas as linhas;
+- Na base de dados é importante garantir o atributo PDO::FETCH_ASSOC e PDO::ERRMODE_WARNING para um melhor debug;
+- A sessão (session_start()) deve ser instanciada antes de qualquer operação, pois usa cookies;
 - 
