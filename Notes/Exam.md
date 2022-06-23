@@ -59,4 +59,9 @@
 - Var é mau pois só tem function scope e são as primeiras coisas processadas nesse scope;
 - Variáveis usadas não declaradas acabam por tornar-se globais, pois são processadas camada a camada até encontrar o local de instanciação, até que no fim pode chegar ao window ou global object;
 - '11' + 31 = 1131, se não houver dois tipos inteiros, o inteiro é transformado em string e concatenado;
+- Qualquer comparação, se não for de tipos iguais, então são primeiro transformados em números. Os objectos são comparados por referência;
+- Tudo comparado com null ou undefined retorna falso;
+- As funções podem ser tratadas como variáveis, ao manipular ter em atenção para não usar parêntises;
+- this refere-se sempre ao objecto a manipular;
+- const person = { name: 'John Doe' }; person.name = 'Jane Doe' é permitido. Constante é o objecto e não os atributos. Podemos adicionar mais atributos também, tanto em versão array como objecto;
 - 
