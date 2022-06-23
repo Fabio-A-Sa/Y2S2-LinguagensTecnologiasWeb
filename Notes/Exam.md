@@ -68,4 +68,5 @@
 - Apply e Call para mudar o contexto de uma função, para que o this seja de outro objecto. O Apply pode ter uma lista de argumentos. O Bind() retorna uma função para que possa ser executada depois e não no momento, útil para addEventListener;
 - Atributos começados com _ são read-only, mesmo que person.age = 50 não altera o valor original do construtor. Atributos começados com # são privados e dão erro ou undefined;
 - For... in é para propriedades de objectos, For.. of é para iterar num array, por exemplo;
+- Promise é um objecto que recebe uma função de dois parâmetros: resolve, reject;
 - 
