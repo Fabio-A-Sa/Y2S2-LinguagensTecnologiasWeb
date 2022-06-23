@@ -55,3 +55,8 @@
 
 ## 4 - JavaScript e DOM
 
+- Se usar o modo strict não permite variáveis globais não usadas, variáveis declaradas com var e alguns warnings são transformados em erros;
+- Var é mau pois só tem function scope e são as primeiras coisas processadas nesse scope;
+- Variáveis usadas não declaradas acabam por tornar-se globais, pois são processadas camada a camada até encontrar o local de instanciação, até que no fim pode chegar ao window ou global object;
+- '11' + 31 = 1131, se não houver dois tipos inteiros, o inteiro é transformado em string e concatenado;
+- 
