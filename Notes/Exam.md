@@ -77,3 +77,6 @@
 
 ## 5 - Regular Expressions
 
+- Atenção aos caracteres que precisam de "\" antes;
+- A expressão regular /<.+>/ não apanha só as tags de HTML mas sim todo o conteúdo interno. As RE são greedy. Para apanhar só tags usar /<.+?>/ ou simplesmente /<[^>]+>/;
+
