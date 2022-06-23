@@ -19,6 +19,16 @@ A resposta para cada método a seguir tem forma XXX. Pode ser:
 - Client Error (4XX);
 - Server Error (5XX);
 
+```php
+if ($_SERVER['REQUEST_METHOD'] == 'PUT') { 
+    // update resource
+} 
+
+if ($_SERVER['HTTP_ACCEPT'] == 'application/json') {
+    echo json_encode($employees);
+}
+```
+
 ### GET e HEAD
 
 São métodos seguros (também idempotentes), obrigatórios para servidores HTTP, e que não alteram o estado do servidor. 
@@ -33,4 +43,4 @@ Pedido para ser gerado um novo URL. Também tem side-efects no servidor.
 
 ## REST
 
-Representational State Transfer é um estilo de arquitetura baseado em recursos e não em ações. Funciona com comunicações client-server. 
+Representational State Transfer é um estilo de arquitetura baseado em recursos e não em ações. Funciona com comunicações client-server stateless.  
