@@ -53,3 +53,10 @@ function is_phone_number($element) {
 }
 ```
 
+### JavaScript
+
+```javascript
+const pattern = /(\d{4})(?:-(\d{3}))?/;
+console.log(pattern.test('4100-122')); // true
+
+```
