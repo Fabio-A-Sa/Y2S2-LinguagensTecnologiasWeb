@@ -4,4 +4,4 @@ Hyper Text Transfer Protocol, que é uma camada de aplicação, um protocolo par
 
 ## URL, URI, URN
 
-O URL é transformado em IP através do 
+URI é uma super
