@@ -68,5 +68,8 @@
 - Apply e Call para mudar o contexto de uma função, para que o this seja de outro objecto. O Apply pode ter uma lista de argumentos. O Bind() retorna uma função para que possa ser executada depois e não no momento, útil para addEventListener;
 - Atributos começados com _ são read-only, mesmo que person.age = 50 não altera o valor original do construtor. Atributos começados com # são privados e dão erro ou undefined;
 - For... in é para propriedades de objectos, For.. of é para iterar num array, por exemplo;
-- Promise é um objecto que recebe uma função de dois parâmetros: resolve, reject;
+- Promise é um objecto que recebe uma função de dois parâmetros: resolve, reject. Útil para ler ficheiros, usando uma função que no fundo retorna uma promessa;
+- Await só funciona dentro de funções async;
+- document.location é o próprio URL da página. O document é uma árvore de Nodes, dos quais surgem os HTMLElements;
+- async no head do HTML, colocar a tag script fechada e com async, para que o javascript corra enquanto a página é criada, ou defer para o javascript só correr quando o HTML esteja todo carregado;
 - 
