@@ -10,3 +10,23 @@ URI (Uniform Resource Identifier) é uma identificador que nos permite referenci
 
 Versão segura e criptografada do HTTP, usando uma camada de segurança de SSL e TLS. 
 
+## Métodos
+
+A resposta para cada método a seguir tem forma XXX. Pode ser:
+- Informação (1XX);
+- Sucess (2XX);
+- Redirection (3XX);
+- Client Error (4XX);
+- Server Error (5XX);
+
+### GET e HEAD
+
+São métodos seguros (também idempotentes), obrigatórios para servidores HTTP, e que não alteram o estado do servidor. 
+
+### DELETE e PUT
+
+São métodos idempotentes. Um cria um recurso numa determinada URl, outro apaga o mesmo. Não acontece mais por serem chamados X vezes. Chamar uma vez e chamar muitas é a mesma coisa.
+
+### POST e outros
+
+Pedido para ser gerado um novo URL, que tem side-efects no servidor. 
