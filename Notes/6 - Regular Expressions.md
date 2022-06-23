@@ -57,6 +57,8 @@ function is_phone_number($element) {
 
 ```javascript
 const pattern = /(\d{4})(?:-(\d{3}))?/;
-console.log(pattern.test('4100-122')); // true
-
+const string = '4100-122';
+console.log(pattern.test(string)); // true
+console.log(string.match(pattern)); // ["4100-122", "4100", "122", index: 0, input: "4100-122 4200"]
+console.log(string.search(string)); // 0 -> index of first match
 ```
