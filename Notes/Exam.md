@@ -62,6 +62,7 @@
 - Qualquer comparação, se não for de tipos iguais, então são primeiro transformados em números. Os objectos são comparados por referência;
 - Tudo comparado com null ou undefined retorna falso;
 - As funções podem ser tratadas como variáveis, ao manipular ter em atenção para não usar parêntises;
-- this refere-se sempre ao objecto a manipular;
+- this refere-se sempre ao objecto a manipular, ou ao contexto numa função, arrow functions não têm um this;
 - const person = { name: 'John Doe' }; person.name = 'Jane Doe' é permitido. Constante é o objecto e não os atributos. Podemos adicionar mais atributos também, tanto em versão array como objecto;
+- Cada função em Javascript tem dentro um protótipo, sempre que é modificado (Person.prototype.age) os outros objectos recebem também o novo atributo. Não basta modificar um objecto, tem de ser o próprio protótipo que a criou;
 - 
