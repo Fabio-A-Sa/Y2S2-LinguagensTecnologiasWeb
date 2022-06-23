@@ -7,6 +7,7 @@
 3. PHP
 4. JavaScript e DOM
 5. Regular Expressions
+6. HTTP
 
 ## 1 - HTML
 
@@ -79,4 +80,6 @@
 
 - Atenção aos caracteres que precisam de "\" antes;
 - A expressão regular /<.+>/ não apanha só as tags de HTML mas sim todo o conteúdo interno. As RE são greedy. Para apanhar só tags usar /<.+?>/ ou simplesmente /<[^>]+>/;
+
+## 6 - HTTP
 
