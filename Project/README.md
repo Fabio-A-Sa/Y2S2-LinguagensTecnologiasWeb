@@ -1,4 +1,4 @@
-# ltw-t05-g01
+# "O Comilão" (Grade: 18.3/20)
 
 ## Features
 
@@ -24,9 +24,9 @@
 
 ## Credentials
 
-miaferreira@outlook.pt/mia
-sarabrito@hotmail.com/sara
-afonsoribeiro@outlook.pt/afonso
+miaferreira@outlook.pt/mia <br>
+sarabrito@hotmail.com/sara <br>
+afonsoribeiro@outlook.pt/afonso <br>
 
 ## Team
 
